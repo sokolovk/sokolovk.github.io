@@ -1,0 +1,75 @@
+﻿.row{
+  font-size: 1em;
+  padding: 15px 10px;  
+}
+
+.row:nth-child(even){
+  background-color: #F1F1F1	
+}
+
+.col{ 
+  padding: 0 10px;
+}
+
+.col a{
+  color: #fff;
+  display: inline;
+}
+
+.col h2, .col a{
+  text-transform: uppercase;
+}
+
+.col:nth-child(5) h2{
+  text-transform: none;
+}
+
+.col h2{   
+  font-size: 2.2em;   
+}
+
+.col p{
+  font-size: 0.9em;	
+}
+
+.col p, .col{
+  text-align: center;
+}
+
+.col{
+  padding-bottom: 20px;
+}
+
+.col a{ 
+  background-color: #24222F; 
+}
+
+.col a{
+  padding: 10px 15px;
+}
+
+.col a:hover{
+  color: #000!important;
+}
+
+.col a:hover{	
+  background-color: #ccc;
+}
+
+.col a{
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+.link-content{
+   padding: 10px 0;
+}
+
+/*==========rules for big screen==============*/
+@media(min-width: 1200px){  
+  
+  .col{
+     width: 50%;
+     float:left;     
+  }
+}

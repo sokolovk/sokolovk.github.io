@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="viewport" content="width=device-width">
+ <meta name = "description" content = "Materiału na temat podstaw CSS, selectory CSS, arkuszy stylu"> 
+ <meta name = "author" content = "Kostiantyn Sokolov">
+ <link rel="stylesheet" type="text/css" href="../styles/style.css"> 
+ <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+ <script src=http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js></script>
+ <script src="../js/menu.js"></script>
+ <title>Podstawy CSS</title>
+</head>
+<body>  
+<header>
+    <div id="top-header" class="clearfix">
+     <div id="site-name"><a href="../index.html">НTML BOOK</a></div>
+     <div id="site-description">THE&nbsp; WORLD'S&nbsp; WEB&nbsp; DEVELOPER&nbsp; SITE</div>
+    </div>        
+		<nav>      
+			 <ul id="top-menu" class="clearfix">
+        <li>
+          <div id='top-nav-icon'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </li>       
+        <li><a href="../html/introduction.html">html</a></li>
+        <li><a href="../css/basics-css.html">css</a></li>
+        <li><a href="../javascript/introduction.html">javascript</a></li>
+       </ul>
+   	 </nav>   	 
+ </header>	
+<div class="clearfix wrapper"> 
+   <section id="sidebar">
+    <div class="sidebar-content">
+    <h2>CSS</h2>
+    <ul class="list-sid-bar">
+       <li><a href="basics-css.html">Podstawy</a></li>
+       <li><a href="selector.html">Selektory</a></li>     
+    </ul>  
+  </div>
+ </section>  
+ <section id="main">   
+   <div class="main-contents"> 
+     <h1>Podstawy CSS</h1>
+     <div class="prev-nav clearfix">
+         <a href="../index.html" class="nav-left" title="Główna strona">Główna strona</a> 
+         <a href="selector.html" class="nav-righ">Następna</a>
+      </div>
+       <p>
+        Kaskadowe arkusze stylów (ang. <i>Cascading Style Sheets, w skrócie</i> <b>CSS</b>) – język służący do opisu formy prezentacji (wyświetlania) stron WWW. W tym artykule zobaczysz, jak można tworzyć skomplikowane strony, używając do tego kaskadowych arkudzy stylów(CSS).
+       </p>
+       <h3>W artykule poruszymy wymienione poniżej tematy.</h3>
+       <ul class="list-arrow">
+          <li>Utworzenie arkuszy stylów oraz dołączenie ich na stronie.</li>
+          <li>Połączenie z zewnętrznymi arkuszami styłów.</li>                    
+       </ul>
+       <h2>
+          Dolączenie stylów na stronie
+       </h2>
+       <p>
+            Przede wszystkim zobacz, w jaki sposób można stosować style.
+        </p>       
+       <div class="example-content">                
+          <div class="example">            
+            <span>&lt;</span>style <span>type='</span><i>text/css</i><span>'&gt;</span><br>
+            h1 <span>{font-size:</span><i>18px<span>;</span></i> <span>font-weigh:</span><i>bold</i><span>;}</span><br>
+            h2 <span>{font-size:</span><i>14px<span>;</span></i> <span>font-weigh:</span><i>bold</i><span>;}</span><br>           
+          </div>
+       </div>
+       <p>
+          Znacznik &lt;style&gt; powinien znaleźć sięw elemencie &lt;head&gt; na stronie. Wartość jego atrybutu type wskazuje typ 
+          <abbr title="MIME to skrót od multipurpose interet mail extensions - obecnie są używane także w innych przypadkach, gdy zachodzi potrzeba wymiany informacji o typach plików.">MIME</abbr> arkusza stylów, czyli text/css - to jedyna wartość,
+          jakiej będziesz używać. Nie jest wymagany w specyfikacji HTML5 i większość programistów sieciowych go pomija. W treści arkusza stylów znajduje się seria reguł. Wszystkie reguły stosują tę samą pokazaną poniżej strukturę.
+       </p>                       
+       <div class="example">           
+           selector <span>{właściwośc1:</span><i>wartość1<span>;</span></i> 
+           <span>właściwośc2:</span><i>wartość1</i><span>;...}</span>          
+       </div>       
+       <p>
+         Każda reguła składa się z selektora, po którym znajduje się lista właściwości oraz wartości powiązanych z tymi właściwościami. Wszystkie właściwości definiowane dla selektora są ujęte w nawiasie klamrowym. Dla selektora możesz zdefiniować dowolną liczbę właściwości, które muszą być rozdzielone średnikami. 
+       </p>
+       <p>
+          Selektory użyte dotąd mają takie same nazwy jak znaczniki. Jeżeli używasz p jako selektora, wówczas zdefiniowana reguła będzie zastosowana dla wszystkich znaczników &lt;p&gt; na stronie. Podobnie w przypadku użycia h1 jako selektora będzie on stosowany dla wszystkich znaczników &lt;h1&gt;.
+       </p>
+       <h2>
+          Utworzenie arkuszy stylów na poziomie witryny
+       </h2>
+       <p>
+          Dopoki nie zaczniesz tworzyć arkuszy działających na poziomie całej witryny, nie osiągniesz prawdziwej wydajności arkuszy stylów. Wszystkie style można zdefiniować w oddzielnym pliku, a następnie dołączać go na każdej stronie internetowej za pomocą odpowiedniego znacznika. W tego rodzaju pliku <abbr title="ang. Cascading Style Sheets">CSS</abbr> znajdzie się treść znacznika &lt;style&gt;. Aby arkusz stylów z wcześniejszego przykładu zamienić na oddzielny plik, mógłbyś utworzyć nowy plik o nazwie 
+          <i>styles.css</i> i umieścić w nim poniższy fragment kodu.
+       </p>
+       <div class="example-content">                
+          <div class="example">            
+            <span>&lt;</span>style <span>type='</span><i>text/css</i><span>'&gt;</span><br>
+            h1 <span>{font-size:</span><i>18px<span>;</span></i> <span>font-weigh:</span><i>bold</i><span>;}</span><br>
+            h2 <span>{font-size:</span><i>14px<span>;</span></i> <span>font-weigh:</span><i>bold</i><span>;}</span><br>           
+          </div>
+       </div>
+       <p>
+         Po utworzeniu pliku arkusza stylów można go dołączyć na stronie za pomocą znacznika &lt;link&gt;.
+       </p>                      
+        <div class="example">            
+            <span><b>&lt;link rel='stylesheet' href='styles.css' type='text/css'&gt;</b></span>          
+        </div>      
+       <p>
+          Atrybut <i>href</i> może wskazywać względny lub bezwzględny adres <abbr title="ang. uniform resource locator">URL.</abbr> Na tworzonych stronach internetowych możesz więc umieszczać łącza do wielu arkuszy stylów, a zastosowane będą wszystkie reguły. To oznacza możliwość przygotowania jednego ogólnego arkusza stylów dla calej witryny, a następnie kolejnych przeznaczonych dla danej strony lub sekcji witryny.
+       </p>
+        <div class="prev-nav clearfix">
+          <a href="../index.html" class="nav-left" title="Główna strona">Główna strona</a> 
+          <a href="selector.html" class="nav-righ">Następna</a>
+        </div>  
+        <footer> 
+          Sokolov Kostiantyn © 2019 r. 
+       </footer>      
+     </div>    
+   </section>           
+ </div> 
+</body>
+</html>

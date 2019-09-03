@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="viewport" content="width=device-width">
+ <meta name = "description" content = "Mnóstwo materiału na temat podstaw HTML, a także zgodnie z nowym standardem HTML 5.">  
+ <meta name = "author" content = "Kostiantyn Sokolov"> 
+ <link rel="stylesheet" type="text/css" href="../styles/style.css"> 
+ <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+ <script src=http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js></script>
+ <script src="../js/menu.js"></script>
+ <title>Podstawy HTML</title>
+</head>
+<body>  
+	<header>
+    <div id="top-header" class="clearfix">
+     <div id="site-name"><a href="../index.html">HTML BOOK</a></div>
+     <div id="site-description">THE&nbsp; WORLD'S&nbsp; WEB&nbsp; DEVELOPER&nbsp; SITE</div>
+    </div>        
+		<nav>      
+			<ul id="top-menu" class="clearfix">
+        <li>
+          <div id='top-nav-icon'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+         </li>       
+         <li><a href="../html/introduction.html">html</a></li>
+         <li><a href="../css/basics-css.html">css</a></li>
+         <li><a href="../javascript/introduction.html">javascript</a></li>
+       </ul>
+   	 </nav>   	 
+ </header>	
+ <div class="clearfix wrapper">
+   <section id="sidebar">
+      <div class="sidebar-content">
+        <h2>HTML</h2>
+      <ul class="list-sid-bar">
+        <li><a href="introduction.html">Wprowadzenie</a></li>
+        <li><a href="redactors.html">Edytory</a></li>
+        <li><a href="basics.html">Podstawy</a></li>
+        <li><a href="attributes.html">Atrybuty</a></li> 
+        <li><a href="headers.html">Nagłówki</a></li> 
+        <li><a href="paragraph.html">Akapity</a></li> 
+      </ul>
+    </div>  
+   </section>  
+  <section id="main">   
+   <div class="main-contents">   
+      <h1>Podstawy HTML</h1>
+       <div class="prev-nav clearfix">
+         <a href="redactors.html" class="nav-left" title="HTML edytory">Poprzednia</a> 
+         <a href="attributes.html" class="nav-righ" title="Atrybuty HTML">Następna</a>
+      </div>
+         <h2>
+            Jak działają znaczniki?
+         </h2>
+         <p>
+           HTML jest <b>językiem znaczników</b>. Tworzenie w języku znaczników oznacza rozpoczęcie pracy z dodanie specjalnych znaczników wokół słów i akapitów oraz tekstem strony. Te znaczniki wskazują poszczególne fragmenty strony oraz powodują wygenerowanie odmiennych efektów w przegłądarce WWW.
+         </p>
+         <p>
+            HTML ma pewien zdefiniowany zestaw znaczników, które pozostają do Twojej dyspozycji. Nie możesz opracować własnych znaczników w celu utworzenia nowych styłów.
+         </p>
+         <p>
+             Większość znaczników przedstawia się następująco
+         </p>
+         <p>
+            <b><span>&lt;nazwaznacznika&gt;</span></b> <i>treść</i><b><span>&lt;/nazwaznacznika&gt;</span></b>
+         </p>
+         <p>
+            Nazwa znacznika jest umieszczona w nawiasie ostrym(<b>&lt;&gt;</b>). Ogólnie rzecz biorąc, znacznik HTML składa się ze znacznika otwierającego i zamykającego, między którymi znajduje się treść. W przypadku znacznika zamykającego jego nazwa jest poprzedzona ukośnikiem<b>(/)</b>. W ten sposób znacznik otwierający (taki jak &lt;p&gt; dla akapitu) i zamykający (taki jak &lt;/p&gt; dla akapitu) to jest określane mianem <b>elementu HTML</b>.
+         </p>
+         <p> 
+            Nie wszystkie elementy HTML składają się ze znacznika otwierającego i zamykającego. Część znaczników jest tylko jednostronna, a część stanowi rodzaj kontenerów przechowujących wewnątrz informacje dodatkowe i tekst, przykład poniżej.
+         </p>
+            <div class="example-content">                
+               <div class="example">            
+                  <i>&lt;meta</i> http-equiv=<i class="col-green">"Content-Type"</i> 
+                  content=<i class="col-green">"text/html; charset=utf-8"</i><i>&gt;</i>
+               </div>
+            </div>
+          <hr> 
+          <h2>
+            Struktura kodu HTML
+         </h2>        
+         <h4>
+            Skoncentrujemy się na znacznikach HTML.
+         </h4>
+         <ul class="list-arrow">
+            <li>
+               Znaczniki przeznaczone do przygotowania ogólnej struktury stron <span>&lt;html&gt;</span>, <span>&lt;head&gt;</span>,
+               <span>&lt;body&gt;</span>.
+            </li>
+            <li>
+               Znaczniki przeznaczone do zdefiniowania tytułu, nagłówków i akapitów <span>&lt;title&gt;</span>, od <span>&lt;h1&gt;</span> do <span>&lt;h6&gt;</span>, i <span>&lt;p&gt;</span>.
+            </li>
+            <li>
+               Znaczniki pozwalające na umieszczenie komentarzy w kodzie strony, czyli <span>&lt;!--</span> i <span>--&gt;</span>.
+            </li>
+         </ul>
+         <p>
+            Język HTML oferuje trzy znaczniki przeznaczone do definiowania ogólnej struktury strony, a także pozwala na zdefiniowanie nagłówków. Te trzy wspomniane znaczniki &lt;html&gt;, &lt;head&gt;, &lt;body&gt; - tworzą podstawowy szkielet każdej strony internetowej. Przed wczytaniem treści danej strony, zapewniają  informacje o stronie(na przykład  tytuł oraz jej autora). Znaczniki trorzące strukturę strony nie mają wpływu na jej wygłąd po wyświetleniu i mają jedynie na celu ułatwienie pracy przegłądarkom WWW.
+         </p>
+          <div class="example-content">                
+               <div class="example">            
+                   <i>&lt;</i>!DOCTYPE html<i>&gt;</i><br>       
+                   <i>&lt;html&gt;</i><br>
+                   <i>&lt;head&gt;</i><br>
+                   <i>&lt;title&gt;</i><span>Tytuł strony</span><i>&lt;/title&gt;</i><br>
+                   <i>&lt;/head&gt;</i><br>
+                   <i>&lt;body&gt;</i><br>
+                      <span>treść strony...</span><br>
+                   <i>&lt;/body&gt;</i><br>
+                   <i>&lt;/html&gt;</i>
+               </div>
+            </div>
+            <h3>
+                Znacznik <span>&lt;html&gt;</span>                
+            </h3>
+            <p>
+               Cały tekst i wszystkie elementy strony internetowej powinny znaleźć się między otwierającym i zamykającym znacznikiem <span>&lt;html&gt;</span>
+            </p>           
+            <p>
+               Użycie go jest wymagane, ponieważ zarówno specyfikacja <abbr title="Extensible Markup Language">XML</abbr>, jak i <abbr title="Standard Generalized Markup Language">SGML</abbr> określają, że każdy dokument powinien mieć element główny. W przypadku znacznika <span>&lt;html&gt;</span> (czego nie powinieneś robić) strona staje się nieprawidłowa, a przeglądarka WWW samodzielnie umieści w kodzie znacznik <span>&lt;html&gt;</span>, aby procesor HTML mógł przetworzyć tę stronę.
+            </p>
+            <h3>
+                Znacznik <span>&lt;head&gt;</span>
+            </h3>
+            <p>
+                Znacznik <span>&lt;head&gt;</span> działa w charakterze kontenera dla znaczników zawierających informacje o danej stronie, a nie treść wyświetlaną na stronie. Nigdy nie powinieneś umieszczać żadnej treści strony w jej nagłówku.
+            </p>
+            <h3>
+                Znacznik <span>&lt;body&gt;</span>
+            </h3>
+            <p>
+               Treść strony HTML znajduje się w znaczniku <span>&lt;body&gt;</span>. W wymienionym znaczniku umieszczamy cały tekst oraz inną treść, na przykład łącza, obrazy itd.                
+            </p>
+            <p>
+                Znaczniki &lt;body&gt; i &lt;/body&gt; znajdują się wewnątrz &lt;html&gt;. Z zagnieżdżeniem mamy również do czynienia w przypadku nagłówka strony(&lt;head&gt;). Wszystkie znaczniki HTML działają w taki sposób i definiują poszczególne, zagnieżsżone sekcje tekstu. Powinieneś zachować ostrożność i nigdy nie doprowadzać do nakładania się znaczników. Oznacza to, że nigdy nie wolno stosować struktury podobnej do poniższej.
+            </p>
+            <div class="example-content">                
+               <div class="example">            
+                   <i>&lt;html&gt;</i><br>
+                   <i>&lt;head&gt;</i><br>
+                   <i>&lt;body&gt;</i><br>
+                   <i>&lt;/head&gt;</i><br>
+                   <i>&lt;/body&gt;</i><br>
+                   <i>&lt;/html&gt;</i>                  
+               </div>
+            </div>
+            <p>
+               Gdy zamykasz znacznik HTML, zawsze upewnij się o zamykaniu ostatnio otworzonego znacznika.
+            </p>
+            <h2>
+               Tytuł
+            </h2>
+            <p>
+               Każda strona HTML wymaga podania tytułu wskazującego treść zamieszczoną na danej stronie. Znacznik <span>&lt;title&gt;</span> jest umieszczany wewnątrz znacznika &lt;head&gt; i standardowo stosowany do opisu zawartości strony.
+            </p>
+            <h2>
+              Nagłówki
+            </h2>
+            <p> HTML definiuje sześć poziomów nagłówków (od h1 do h6).</p>
+            <div class="example-content">                
+               <div class="example">            
+                   <i>&lt;h1&gt;</i><span>To jest nagłówek</span><i>&lt;/h1&gt;</i><br>
+               </div>
+            </div>
+            <p>
+               Tekst nagłówka jest wyświetlany większą, pogrubioną czcionką aby wyraźnie odróżniał się od zwykłego tekstu. Nie wykorzystuj nagłówki w celu wyświetlaniz pogrubionego tekstu. Wprawdzie wynik może być zgodny z oczekiwaniami, ale kod znaczników na pewno nie biędzie odzwierciedłał struktury strony.
+            </p>
+            <h2>
+               Akapity
+            </h2>
+            <p>
+               Do zdefiniowania akapitu jest znacznik <span>&lt;p&gt;</span>. Akapit (paragraf) jest bardzo ważny w składni HTML, ponieważ pozwala w określony sposób sformatować tekst na ekranie (ułożyć go w podany sposób). 
+            </p>
+            <div class="example-content">                
+               <div class="example">            
+                   <i>&lt;p&gt;</i><span>To jest tekst akapitu</span><i>&lt;/p&gt;</i><br>
+               </div>
+            </div>
+             <h2>
+               Komentarze
+            </h2>
+            <p>
+               Komentarze na stronach HTML można umieścić w celu dostarczenia opisu samej strony lub pewnego rodzaju informacji o jej stanie.Tekst znajdujący się w komentarzu jest ignorowany podczas przetwarzania pliku HTML, komentarze nigdy nie są wyświetlane na ekranie. 
+            </p> 
+            <div class="example-content">                
+               <div class="example">            
+                   <i>&lt;!--</i><span>To jest komentarz</span><i>--&gt;</i><br>
+               </div>
+            </div>
+            <p>
+               Jeśli skorzysta z wbudowanej w przeglądarki funkcji wyświetlania kodu źródłowego strony, użytkownik ma możliwość uzyskania dostępu do komentarzy. Dlatego nie umieszczaj w komentarzach żadnych danych, których nie chcesz przekazać użytkownikom.
+            </p>
+            <div class="prev-nav clearfix">
+                 <a href="redactors.html" class="nav-left" title="HTML edytory">Poprzednia</a> 
+                 <a href="attributes.html" class="nav-righ" title="Atrybuty HTML">Następna</a>
+            </div>
+            <footer> 
+             Sokolov Kostiantyn © 2019 r. 
+           </footer>      
+       </div>      
+     </section>
+  </div>
+ </body>
+</html>

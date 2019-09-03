@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="viewport" content="width=device-width">
+ <meta name = "description" content = "Mnóstwo materiału na temat podstaw HTML, a także zgodnie z nowym standardem HTML 5."> 
+ <meta name = "author" content = "Kostiantyn Sokolov"> 
+ <link rel="stylesheet" type="text/css" href="../styles/style.css"> 
+ <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+ <script src=http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js></script>
+ <script src="../js/menu.js"></script>
+ <title>Wprowadzenie do HMTL</title>
+</head>
+<body>  
+	<header>
+    <div id="top-header" class="clearfix">
+     <div id="site-name"><a href="../index.html">HTML BOOK</a></div>
+     <div id="site-description">THE&nbsp; WORLD'S&nbsp; WEB&nbsp; DEVELOPER&nbsp; SITE</div>
+    </div>        
+		<nav>      
+			 <ul id="top-menu" class="clearfix">
+        <li>
+          <div id='top-nav-icon'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+         </li>       
+         <li><a href="../html/introduction.html">html</a></li>
+         <li><a href="../css/basics-css.html">css</a></li>
+         <li><a href="../javascript/introduction.html">javascript</a></li>
+       </ul>
+   	 </nav>   	 
+ </header>	
+<div class="clearfix wrapper">
+   <section id="sidebar">
+      <div class="sidebar-content">
+        <h2>HTML</h2>
+      <ul class="list-sid-bar">
+        <li><a href="introduction.html">Wprowadzenie</a></li>
+        <li><a href="redactors.html">Edytory</a></li>
+        <li><a href="basics.html">Podstawy</a></li>
+        <li><a href="attributes.html">Atrybuty</a></li> 
+        <li><a href="headers.html">Nagłówki</a></li> 
+        <li><a href="paragraph.html">Akapity</a></li> 
+      </ul>
+    </div>  
+   </section>  
+  <section id="main">   
+   <div class="main-contents">   
+      <h1>Wprowadzenie do HMTL</h1>
+      <div class="prev-nav clearfix">
+         <a href="../index.html" class="nav-left" title="Główna strona">Główna strona</a> 
+         <a href="redactors.html" class="nav-righ" title="HTML edytory">Następna</a>
+      </div>
+      <h2>Czym jest HTML?</h2>
+      <p><abbr title="HyperText Markup Language">HTML</abbr> to skrót od <i>hyper text markup language</i>, czyli hipertekstowy język
+          znaczników, wykorzystywany do tworzenia dokumentów hipertekstowych.
+      </p>
+      <ul>
+        <li>HTML opisuje strukturę strony</li>        
+        <li>HTML jest językiem znaczników, elementy HTML są reprezentowane przez znaczniki</li>
+        <li>elementy HTML poinformować przeglądarkę w jaki sposób wyświetlać zawartość</li>
+        <li>Przeglądarki nie wyświetlają tagów HTML, ale wykorzystać je do renderowania zawartości strony</li>        
+      </ul>
+      <hr>
+      <h2>Utworzenie pierwszej strony HTML</h2>
+        <p>
+          W celu rozpoczęcia tworzenia kodu HTML nie potrzebujesz połączenia z internetem. Tak naprawdę niezbędna jest jedynie aplikacja pozwalająca na tworzenie plików HTML oraz przeglądarka WWW  do ich wyświetlania. Tworzysz, łączysz i testujesz całe zestawy stron internetowych, nie dotykając nawet sieci. 
+        </p>
+        <p>
+           Otwórz edytor tekstu i wprowadź przedstawiony poniżej kod. W tym momencie nie musisz rozumieć dokładnie sposobu jego działania. 
+         </p>
+        <div class="example-content">          
+            <div class="example">            
+              <i>&lt;</i>!DOCTYPE html<i>&gt;</i><br>       
+              <i>&lt;html&gt;</i><br>
+              <i>&lt;head&gt;</i><br>
+              <i>&lt;title&gt;</i><span>Moja prosta strona HTML</span><i>&lt;/title&gt;</i><br>
+              <i>&lt;/head&gt;</i><br>
+              <i>&lt;body&gt;</i><br>
+              <i>&lt;h1&gt;</i><span>To jest strona HTML</span><i>&lt;/h1&gt;</i><br>
+              <i>&lt;/body&gt;</i><br>
+              <i>&lt;/html&gt;</i>
+             </div>
+          </div>
+          <h2>Wytłumaczenie</h2>
+            <ul>
+               <li><span>&lt;!DOCTYPE&gt;</span>Deklaracja określa ten dokument do HTML5</li>
+               <li><span>&lt;html&gt;</span>Elementem jest element główny od strony HTML</li>
+               <li><span>&lt;head&gt;</span>Element zawiera meta informacje o dokumencie</li>
+               <li><span>&lt;title&gt;</span>Element określa tytuł dokumentu</li>
+               <li><span>&lt;body&gt;</span>Element zawiera widoczną zawartości stron</li>
+               <li><span>&lt;h1&gt;</span>Element definiuje duży nagłówek</li>
+               <li><span>&lt;p&gt;</span>Element definiuje paragraf</li>
+            </ul>
+          <div class="html-attention">
+            <h4> &nbsp;Uwaga&nbsp;</h4>
+             <div>
+               Zwróć uwagę, że znacznik w powyższym przykładzie<span>&lt;!DOCTYPE&gt;</span>, ponieważ jego nazwa rozpoczyna się od wykrzyknika. Celem tego znacznika jest wskazanie weryfikatorom treści i przeglądarkom WWW specyfikacji, zgodnie z którą powstała strona standartu HTML5.
+             </div>
+          </div> 
+          Po utworzeniu pliku HTML zapisz go. Kiedy będziesz wybierał nazwę dla pliku, zastosuj się do dwóch poniższych reguł.
+          <ul>
+            <li>
+              Nazwa pliku powinna mieć rozszerzenie <i>.html</i>, na przykład <i>index.html</i>. Jeżeli używasz systemu Windows, upewnij się, że system został skonfigurowany do wyświetlania rozszerzeń plików. Jeżeli nie jest, wówczas skutkiem będzie utworzenie pliku o nazwie takiej jak 
+              <i>index.html.txt</i>, który przez przeglądarkę WWW nie będzie rozpoznany jako dukument HTML.</li>
+            <li>
+              Używay krótkich i prostych nazw. Nie stosuj spacji lub znaków specjalnych, a jedynie litery i cyfry. Dzięki temu będziesz mógł łatwo monitorować przeznaczenie poszczególnych plików, a witryna stanie się jeszcze bardziej przyjazna silnikom wyszukiwarek internetowych.
+            </li>
+          </ul>
+          <h2>Historia standardów HTML</h2>
+          <p>
+             HTML 2.0 był pierwotnym standardem dla języka HTML i definiował zestaw znaczników, które powinny być obsługiwane przez wszystkie przeglądarki WWW. Większość znaczników określonych w tej pierwotnej specyfikacji nadal jest obsługiwana i stanowi jądro HTML. Dlatego też możesz opracować doskonałe strony internetowe, wykorzystując jedynie znaczniki wprowadzone w specyfikacji HTML 2.0.
+          </p>
+          <p>
+             Specyfikacja HTML 3.2 została opracowana na początku 1996 roku. Wielu producentów oprogramowania, między innymi Microsoft, IBM, Novell, Netscape Communications Corporation, Spyglass i Sun Microsystems, SoftQuad do konsorcjum <abbr title="World Wide Web Consortium">W3C</abbr>, aby pomóc w pracach nad tą specyfikacją. Najważniejsze zmiany wprowadzone w HTML 3.2 obejmowały dodanie funkcji takich jak aplety, teks opływający wokół obrazów i tabele.
+          </p>
+          <p>
+             Specyfikacja HTML 4.0 pojawiała się w roku 1997 i zawierała wiele nowych funkcji, dzięki którym projektanci zyskali znacznie większą kontrolę nad układem stron niż w przypadku HMTL 2.0 i 3.2 Podobnie jak wymienione wersje HTML, także wersja 4.0 została opracowana przez konsorcjum <abbr title="World Wide Web Consortium">W3C</abbr>.
+          </p>
+          <p>
+             Po specyfikacji HMTL 4.0 pojawiała się XHTML 1.0, a następnie XHTML 1.1. Największą zmianą wprowadzoną w XTHML był wymóg, by dokumenty HTML były prawidłowymi dokumentami XML (ang. <i>extensible markup language</i>, czyli <i>rozszerzalny język 
+             znaczników </i>). Podstawowa różnica między HMLT i XHTML polega na tym, że dokumenty XHMTL muszą być zgodne ze ścisłymi regułami XML dotyczącymi struktury dokumentu. Podczas gdy standard HMTL 4 obsługiwał elementy pozbawione znaczników zamykających, to standard XML wymaga już zamknięcia każdego znacznika. Ponadto każdy atrybut musi mieć wartość itd.
+          </p>
+          <p>
+            28 października 2014 r. specyfikacja HTML5 osiągnęła status rekomendacji <abbr title="World Wide Web Consortium">W3C</abbr>. HTML5 poza dodaniem nowych elementów, usprawniających tworzenie serwisów i aplikacji internetowych, doprecyzowuje wiele niejasności w specyfikacji HTML 4, dotyczących przede wszystkim sposobu obsługi błędów. Niejasności co do sposobu, w jaki przeglądarki powinny obsługiwać błędy w kodzie HTML są jedną z podstawowych przyczyn, dla której wiele serwisów internetowych, napisanych z naruszeniem specyfikacji, w różnych przeglądarkach działa w inny sposób – w niektórych działając, w innych nie.
+          </p>
+          <div class="prev-nav clearfix">
+             <a href="../index.html" class="nav-left" title="Główna strona">Główna strona</a> 
+             <a href="redactors.html" class="nav-righ" title="HTML edytory">Następna</a>
+          </div> 
+          <footer> 
+           Sokolov Kostiantyn © 2019 r. 
+          </footer>        
+        </div>        
+       </section>  
+    </div>  
+</body>
+</html>

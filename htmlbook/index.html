@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="viewport" content="width=device-width">
+ <meta name = "description" content = "Jak stworzyć swoją stronę internetową? Wiele artykułów na tematy: tworzenie stron WWW, HTML, CSS, JavaScript"> 
+ <link rel="stylesheet" type="text/css" href="styles/style.css">
+ <link rel="stylesheet" type="text/css" href="styles/style-index.css">
+ <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon"> 
+ <script src="js/menu.js"></script>
+ <title>Główna strona</title>
+</head>
+<body>  
+  <header>
+    <div id="top-header" class="clearfix">
+      <div id="site-name"><a href="index.html">HTML BOOK</a></div>
+      <div id="site-description">THE&nbsp; WORLD'S&nbsp; WEB&nbsp; DEVELOPER&nbsp; SITE</div>
+    </div>        
+		<nav>      
+		  <ul id="top-menu" class="clearfix">
+        <li>
+          <div id='top-nav-icon'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </li>         
+        <li><a href="html/introduction.html">html</a></li>
+        <li><a href="css/basics-css.html">css</a></li>
+        <li><a href="javascript/introduction.html">javascript</a></li>
+      </ul>
+   	</nav>   	 
+  </header>	
+<div class="clearfix wrapper">  
+<section id="sidebar">
+  <div class="sidebar-content">
+	  <h2>HTML</h2>
+    <ul class="list-sid-bar">
+       <li><a href="html/introduction.html">Wprowadzenie</a></li>
+       <li><a href="html/redactors.html">Edytory</a></li> 
+       <li><a href="html/basics.html">Podstawy </a></li>
+       <li><a href="html/attributes.html">Atrybuty</a></li>
+       <li><a href="html/headers.html">Nagłówki</a></li>
+       <li><a href="html/paragraph.html">Akapity</a></li>       
+    </ul>
+    <h2>CSS</h2>
+    <ul class="list-sid-bar">
+       <li><a href="css/basics-css.html">Podstawy</a></li>
+       <li><a href="css/selector.html">Selektory</a></li>               
+    </ul>           
+  </div>   
+</section>
+<section id="main">   
+  <div class="main-contents">
+    <div class="row clearfix">
+      <div class="col">
+        <img class="icon-img" src="images/html-icon.png" alt="html">
+        <p>Język do tworzenia stron www</p>
+        <div class="link-content">
+          <a href="html/introduction.html" id="learn-html" class='text-raning'>uczyć się HTML</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="example-content">          
+          <h3>przykład html</h3>
+          <div class="example">            
+            <i>&lt;</i>!DOCTYPE html<i>&gt;</i><br>       
+            <i>&lt;</i>html<i>&gt;</i><br>
+            <i>&lt;</i>head<i>&gt;</i><br>
+            <i>&lt;</i>title<i>&gt;</i><span>Moja prosta strona HTML</span><i>&lt;</i>/title<i>&gt;</i><br>
+            <i>&lt;</i>/head<i>&gt;</i><br>
+            <i>&lt;</i>body<i>&gt;</i><br>
+            <i>&lt;</i>h1<i>&gt;</i><span>To jest strona HTML</span><i>&lt;</i>/h1<i>&gt;</i><br>
+            <i>&lt;</i>/body<i>&gt;</i><br>
+            <i>&lt;</i>/html<i>&gt;</i>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="row clearfix">
+        <div class="col">
+          <img class="icon-img" src="images/css-icon.png" alt="css">
+          <p>Język projektowania stron internetowych</p>
+          <div class="link-content">
+            <a href="css/basics-css.html" id="learn-css" class='text-raning'>uczyć się CSS</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="example-content">          
+            <h3>przykład css</h3>
+            <div class="example">            
+              body<span>{</span><br>
+              &nbsp;&nbsp;<span class="col-red">background-color</span>:<i>blue</i>;<br>
+              <span>}</span><br>
+              h1<span>{</span><br>
+              &nbsp;&nbsp; <span class="col-red">color</span>:<i>white</i>;<br>
+              &nbsp;&nbsp; <span class="col-red">font-size</span>:<i>16px</i>;<br>
+              <span>}</span><br>
+              p<span>{</span><br>
+              &nbsp;&nbsp; <span class="col-red">border</span>:<i>solid 2px red</i>;<br>
+              &nbsp;&nbsp; <span class="col-red">padding</span>:<i>15px;</i><br>
+              <span>}</span><br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row clearfix">
+        <div class="col">
+          <img class="icon-img" src="images/js-icon.png" alt="javascript">
+          <p>Język programowania stron internetowych</p>
+          <div class="link-content">
+            <a href="javascript/introduction.html" id="learn-js" class='text-raning'>uczyć się JavaScript</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="example-content">          
+            <h3>przykład javascript</h3>
+            <div class="example">            
+              <i>var</i> <span>price</span>;<br>
+              <i>var</i> <span>quantity</span>;<br>
+              <i>var</i> <span>total</span>;<br>
+              <span>price</span> = <i>4</i>; <span>quantity = </span><i>12</i>;<br>
+              <span>total</span> = <span>price</span> * <span>quantity</span>;<br>
+              <i>var</i> <span>el</span> = <span>document.getElementById</span>('cost');<br>
+              <span>el.textContent</span> = <span>total</span> + 'zł';<br>
+            </div>
+          </div>
+        </div>
+      </div> 
+     <footer> 
+       Sokolov Kostiantyn © 2019 r. 
+     </footer>    
+   </div>         
+</section>
+</div>
+<script>
+  //the script for the movement of the button text.
+var el_learn_html = document.getElementById('learn-html');
+var el_learn_css = document.getElementById('learn-css');
+var el_learn_js = document.getElementById('learn-js');
+
+var run_html = el_learn_html.innerHTML;
+var run_css = el_learn_css.innerHTML;
+var run_js = el_learn_js.innerHTML;
+
+//counters for html,css,js.
+var count_html = 0;
+var count_css = 0;
+var count_js = 0;
+
+//string length of button text
+var html_leng = run_html.length; 
+var css_leng = run_css.length;
+var js_leng = run_js.length;
+
+var speed =90; //the speed of the text
+var delay =50; //delay after end of animation
+
+//the function accepts parameters and shows part of the string
+var showSubstText = function(html, css, js){ 
+  //for html button text 
+  el_learn_html.innerHTML=html.substr(0, count_html);
+  count_html++;
+  if(count_html>html_leng+delay) count_html=0;
+  
+  //for css button text
+  el_learn_css.innerHTML=css.substr(0, count_css);
+  count_css++;
+  if(count_css>css_leng+delay) count_css=0;
+  
+  //for js button text
+  el_learn_js.innerHTML=js.substr(0, count_js);
+  count_js++;
+  if(count_js>js_leng+delay) count_js=0;  
+};
+
+setInterval(function(){
+  showSubstText(run_html, run_css, run_js)}, speed);
+</script>
+</body>
+</html>

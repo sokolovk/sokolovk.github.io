@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="viewport" content="width=device-width">
+ <meta name = "description" content = "Materiału na temat podstaw CSS, selectory CSS, arkuszy stylu, klasy i identyfikatory">  
+ <meta name = "author" content = "Kostiantyn Sokolov"> 
+ <link rel="stylesheet" type="text/css" href="../styles/style.css">
+ <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon"> 
+ <script src="../js/menu.js"></script>
+ <title>Selektory CSS</title>
+</head>
+<body>  
+<header>
+    <div id="top-header" class="clearfix">
+     <div id="site-name"><a href="../index.html">НTML BOOK</a></div>
+     <div id="site-description">THE&nbsp; WORLD'S&nbsp; WEB&nbsp; DEVELOPER&nbsp; SITE</div>
+    </div>        
+		<nav>      
+			 <ul id="top-menu" class="clearfix">
+        <li>
+          <div id='top-nav-icon'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </li>       
+        <li><a href="../html/introduction.html">html</a></li>
+        <li><a href="../css/basics-css.html">css</a></li>
+        <li><a href="../javascript/introduction.html">javascript</a></li>
+       </ul>
+   	 </nav>   	 
+ </header>	
+<div class="clearfix wrapper">  
+   <section id="sidebar">
+     <div class="sidebar-content">
+     <h2>CSS</h2>
+     <ul class="list-sid-bar">
+       <li><a href="basics-css.html">Podstawy</a></li>
+       <li><a href="selector.html">Selektory</a></li>     
+     </ul>  
+  </div>
+ </section>
+ <section id="main">   
+   <div class="main-contents"> 
+     <h1>Selektory CSS</h1>
+     <div class="prev-nav clearfix">
+         <a href="basics-css.html" class="nav-left" title="Główna strona">Poprzednia</a> 
+         <a href="../index.html" class="nav-righ" title="Główna strona">Główna strona</a>
+      </div>       
+       <h3>W artykule poruszymy wymienione poniżej tematy.</h3>
+       <ul class="list-arrow">          
+          <li>Użycie selektorów w celu zastosowania stylów.</li>
+          <li>Selektory kontekstowe.</li>
+          <li>Klasy i identyfikatory.</li>          
+       </ul>
+       <h2>
+          Selektory
+       </h2>
+       <p>
+         Każdy znacznik może być użyty w charakterze selektora <abbr title="ang. Cascading Style Sheets">CSS</abbr>, a reguły zdefiniowane dla tego selektora będą zastosowane względem wszystkich egzemplarzy danego znacznika na stronie. Istnieje możliwość dodania reguły do znacznika &lt;b&gt; określającej użycie w nim zwykłej czcionki lub też wyświetlenia kursywą każdego akapitu na stronie, co wymaga dodania odpowiedniego stylu dla znacznika &lt;p&gt;. Przypisanie stylów znacznika 
+         &lt;body&gt; przez użycie selektora body pozwala na wprowadzenie ustawień dla całej strony. Jednak istnieje możliwość stosowania styłów na znacznie dokładniejszym poziomie, na wiele różnych sposobów oraz definiowania stylów dla różnorodnych typów elementów za pomocą tylko jednego selektora.
+       </p>
+       <p>
+          Istnieje możliwość jednoczesnego przypisania stylów do więcej niż tylko jednego selektora. Przyjmujemy założenie, że chcemy, aby na przykład akapity, listy nieuporządkowane oraz listy uporządkowane  na stronie wyświetlały tekst w czarnym kolorze. Zamiast tworzyć oddzielne reguły dla wymienionych elementów, można zdefiniować jedną, która będzie miała zastosowanie dla tych wszystkich elementów. Poniżej przedstawiłem tego rodzaju rozwiązanie.
+       </p>
+
+       <div class="example">            
+            p, ol, ul  <span>{ color:</span> <i>black</i><span>; } </span>          
+       </div>
+       <p>
+          Rozdzielona przecinkami lista wskazuje, że styl powinien być zastosowany dla wszystkich wymienionych powyżej znaczników.
+       </p>
+       <h2>
+          Selektory kontekstowe
+       </h2>
+       <p>
+         Dostępne są selektory kontekstowe. Tego rodzaju selektory są wykorzystywane w celu zastosowania stylów jedynie do elementów zagnieżdżonych wewnątrz innych, wskazanych elementów.
+       </p>
+       <div class="example">            
+           ol em <span>{ color:</span> <i>blue</i><span>; } </span>          
+       </div>
+       <p>
+         Pominięcie przecinka między wymienionymi elementami oznacza, że ta reguła będzie miała zastosowanie jedynie dla elementów 
+         &lt;<i>em</i>&gt; zagnieżdżonych wewnątrz list uporządkowanych. Spójrz na dwie nieco odmienne reguły.
+       </p>
+       <div class="example-content">
+         <div class="example">
+            li em <span>{ font-style:</span> <i>normal</i><span>;</span><span> font-weight:</span> <i>bold</i><span>;}</span><br>            
+            p em <span>{ font-style:</span> <i>italic</i><span>;</span><span> font-weight:</span> <i>normal</i><span>;}</span>              
+         </div>
+       </div>
+       <p>
+          w tym przypadku znaczniki &lt;<i>em</i>&gt; pojawiające się wewnątrz znaczników &lt;li&gt; będą wygenerowana pogrubioną czcionką.
+          Natomiast gdy znacznik &lt;<i>em</i>&gt; pojawi sie w elemencie &lt;p&gt;, wówczas jego zawartość będzie zapisane kursywą. Spójrz na jeszcze jeden przykład.
+       </p>
+       <div class="example-content">
+         <div class="example">
+            em <span>{ color:</span> <i>green</i><span>; }</span><br> 
+            li em <span>{ font-style:</span> <i>normal</i><span>;</span><span> color:</span> <i>red</i><span>;}</span><br>            
+            p em <span>{ font-style:</span> <i>italic</i><span>;</span><span> color:</span> <i>blue</i><span>;}</span>                 
+         </div>
+       </div>
+       <p>
+         W tym przypadku zagnieżdżone style nadpisują styl domyślny znacznika &lt;<i>em</i>&gt;, ponieważ stanowią znacznie 
+         <i>dokładniejszą</i> definicję stylu. Zawartość znaczników &lt;em&gt; niespełniających kryteriów reguł zagnieżdżonych zostanie wyświetlona w kolorze zielonym. Te zagnieżdżone reguły będą nadpisywały mniej dokładne reguły i dlatego treść znaczników &lt;em&gt; znajdujących się wewnątrz znaczników &lt;p&gt; będzie wyświetlona w kolorze niebieskim. Natomiast wewnątrz elementów listy treść znaczników &lt;em&gt; będznie wyświetlona kolorem czerwonym.
+       </p>
+      <h2>
+         Klasy i identyfikatory
+      </h2> 
+      <p>
+         Czasamy trzeba zastosować własną klasyfikację w <abbr title="ang. Cascading Style Sheets">CSS</abbr>. Mamy dwa atrybuty obsługiwane przez wszystkie znaczniki <abbr title="HyperText Markup Language">HTML</abbr>: class i id. 
+         Atrybut <span>class</span> jest wykorzystywany do <i>klasyfikacji elementów</i>, natomiast atrybut <span>id</span> do przypisywania identyfikatorów w celu zapewnienia <i>unikatowości elementów</i>.
+      </p>
+      <p>
+         W celu zastosowania selektora dla klasy należy użyć <i>kropki w nazwie klasy</i> w arkuszu stylów. Dlatego też jeśli masz następujący znacznik:
+      </p>
+      <div class="example">
+         <i>&lt;div</i> class=<i class="col-green">'sidebar'</i><i>&gt;</i><span>Dowolny tekst</span><i>&lt;/div&gt;</i>         
+      </div>
+      <p>
+         wówczas regułę możesz zapisać w poniżczy sposób.
+      </p>
+      <div class="example">
+         .sidebar <span>{ color:</span> <i>blue</i><span>; font-weight:</span> <i>bold</i><span>;</span> }
+      </div>
+      <p>
+          Każdy element o klasie sidebar będzie wyświetlony pogrubioną czcionką w kolorze niebieskim. Jeżeli tego rodzaju styl chczesz zastosować jedynie dla elementów &lt;div&gt; pasku bocznego, wówczas podczas definiowania reguły możesz podać nazwę elementu i klasy. 
+      </p>
+      <div class="example">
+         div.sidebar <span>{ color:</span> <i>blue</i><span>; font-weight:</span> <i>bold</i><span>;</span> }<br>
+         p.sidebar <span>{ color:</span> <i>red</i><span>; font-weight:</span> <i>bold</i><span>;</span> }
+      </div>
+      <p>
+         Dwie powyższe reguły można zapisaś w następujący sposób:
+      </p>
+      <div class="example-content">
+        <div class="example">
+          .sidebar <span>{ font-weigth:</span> <i>bold</i><span>; }</span><br>
+           div.sidebar <span>{ color:</span> <i>blue</i><span>; }</span> <br>
+           p.sidebar <span>{ color:</span> <i>red</i><span>; }</span> 
+        </div> 
+      </div>
+      <p>
+          Wszystkie elementy klasy sidebar będą wyświetlone czcionką pogrubioną, tekst znaczników &lt;div&gt; wraz z klasą sidebar zostanie wyświetlony w kolorze niebieskim, natomiast akapity z podaną klasą w kolorze czerwonym. 
+      </p>
+      <p>
+         Kiedy chcesz zdefiniować style tylko dla pojedynczego elementu, prypisz mu indentyfikator.Element musi być <i>unikatowy</i> na stronie, czyli na danej stronie może istnieć wyłącznie jeden element o podanym identyfikatorze. Naprzykład, strona będzie miała tylko jedną stopkę. W celu jej identyfikacji wykorzystamy atrybut id.
+      </p>
+      <div class="example-content">
+         <div class="example">       
+          <i>&lt;div</i> id=<i class="col-green">'footer'</i><i>&gt;</i><br>
+            &nbsp;&nbsp;<span>Dowolny tekst</span><br>
+          <i>&lt;div&gt;</i>
+         </div> 
+      </div>
+      <p>
+        Poniżej przykład reguły CSS, które będą stosowane dla stopki przez odwołanie się do przypisanego identyfikatora.
+      </p>
+      <div class="example">       
+          #footer <span>{ text-align:</span> <i>center</i><span>; }</span>
+      </div>
+      <p>
+         Podczas odwoływania się do identyfikatorów w arkuszach stylów konieczne jest umiedzczenie na początku znaku <b>#</b> zapewniającego możliwość odróżnienia od nazw klas elementów.
+      </p>
+      <div class="prev-nav clearfix">
+         <a href="basics-css.html" class="nav-left" title="Główna strona">Poprzednia</a> 
+         <a href="../index.html" class="nav-righ" title="Główna strona">Główna strona</a>
+      </div>  
+        <footer> 
+          Sokolov Kostiantyn © 2019 r. 
+       </footer>   
+    </div>
+   </section>           
+  </div> 
+</body>
+</html>

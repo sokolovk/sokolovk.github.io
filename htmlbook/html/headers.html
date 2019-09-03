@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="viewport" content="width=device-width">
+ <meta name = "description" content = "Materiału na temat nagłówki HTML"> 
+ <meta name = "author" content = "Kostiantyn Sokolov"> 
+ <link rel="stylesheet" type="text/css" href="../styles/style.css"> 
+ <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+ <script src=http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js></script>
+ <script src="../js/menu.js"></script>
+ <title>Nagłówki HTML</title>
+</head>
+<body>  
+<header>
+    <div id="top-header" class="clearfix">
+     <div id="site-name"><a href="../index.html">HTML BOOK</a></div>
+     <div id="site-description">THE&nbsp; WORLD'S&nbsp; WEB&nbsp; DEVELOPER&nbsp; SITE</div>
+    </div>        
+		<nav>      
+			 <ul id="top-menu" class="clearfix">
+         <li>
+          <div id='top-nav-icon'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+         </li>       
+         <li><a href="../html/introduction.html">html</a></li>
+         <li><a href="../css/basics-css.html">css</a></li>
+        <li><a href="../javascript/introduction.html">javascript</a></li>
+       </ul>
+   	 </nav>   	 
+ </header>	
+<div class="clearfix wrapper">
+   <section id="sidebar">
+      <div class="sidebar-content">
+        <h2>HTML</h2>
+      <ul class="list-sid-bar">
+        <li><a href="introduction.html">Wprowadzenie</a></li>
+        <li><a href="redactors.html">Edytory</a></li>
+        <li><a href="basics.html">Podstawy</a></li>
+        <li><a href="attributes.html">Atrybuty</a></li> 
+        <li><a href="headers.html">Nagłówki</a></li> 
+        <li><a href="paragraph.html">Akapity</a></li> 
+      </ul>
+    </div>  
+  </section>  
+<section id="main">   
+   <div class="main-contents"> 
+     <h1>Naglówki HTML</h1>
+     <div class="prev-nav clearfix">
+         <a href="attributes.html" class="nav-left" title="Atrybuty HTML">Poprzednia</a> 
+         <a href="paragraph.html" class="nav-righ" title="Akapity HTML">Następna</a>
+      </div>
+      <p>
+         Nagłówki można potraktować jako elementy umieszczone w szkielecie strony. Jeżeli tworzony tekst ma strukturę, wykorzystaj nagłówki do jej wyrażenia, jak w poniższym fragmencie kodu.
+      </p>
+      <div class="example-content">                
+               <div class="example">                
+                   <i>&lt;h1&gt;</i><span>Jedzenie</span><i>&lt;/h1&gt;</i><br>
+                   &nbsp;&nbsp;<i>&lt;h2&gt;</i><span>Owoce</span><i>&lt;/h2&gt;</i><br>
+                   &nbsp;&nbsp;&nbsp;<i>&lt;h3&gt;</i><span>Jabłka</span><i>&lt;/h3&gt;</i><br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>&lt;h4&gt;</i><span>Gala</span><i>&lt;/h4&gt;</i><br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>&lt;h4&gt;</i><span>Szampion</span><i>&lt;/h4&gt;</i><br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>&lt;h4&gt;</i><span>Ligol</span><i>&lt;/h4&gt;</i><br>
+                   &nbsp;&nbsp;&nbsp;<i>&lt;h3&gt;</i><span>Banany</span><i>&lt;/h3&gt;</i><br>
+                   &nbsp;&nbsp;<i>&lt;h2&gt;</i><span>Warzywa</span><i>&lt;/h2&gt;</i><br>
+                   &nbsp;&nbsp;&nbsp;<i>&lt;h3&gt;</i><span>Ogórki</span><i>&lt;/h3&gt;</i><br>
+                   &nbsp;&nbsp;&nbsp;<i>&lt;h3&gt;</i><span>Ziemniaki</span><i>&lt;/h3&gt;</i><br>            
+               </div>
+        </div>
+        <p>
+           W powyższym fragmencie kodu zastosowanie wcięćw, pozwoliło na pokazanie hierarchii. Przeglądarki WWW ignorują wcięcia. Ale ich zostosowanie w kodzie źródłowym znacznie zwiększa jego czytelność. W tworzonym przez siebie kodzie HTML lepiej stosować tę konwencję.
+        </p>                
+        <div class="img-example">
+          <h3>Dane wyjściowe</h3>         
+          <img src="../images/examples/headers.jpg" alt="nagłówki html">
+          <p><b>rysunek 1. </b>Nagłówki HTML</p> 
+        </div>
+        <p>
+          Nagłówki mogą mieć dowolną długość i obejmować nawet kilka wierszy tekstu. Jednak ponieważ nagłówki są wyświetlane pogrubioną czcinką, wyświetlenie kilku wierszy tego rodzaju czcioką utrudnia ich odczyt.
+        </p> 
+        <div class="html-attention">
+            <h4> &nbsp;Uwaga&nbsp;</h4>
+             <div>
+                Nie wykorzystuj nagłówki w celu wyróżnienia określonych fragmentów strony. Wynik może być zgodny z oczekiwaniami, ale kod znaczników na pewno nie będzie odzwierciedlał struktury strony. To ma znaczenie zwłaszcza w przypadku silników wyszukiwarek internetowych.
+             </div>
+          </div>
+          <p>
+             Nagłówki poziomów od czwartego do szóstego nie są szczególnie interesujące, choć mają znaczenie w kategoriach struktury documentu. Jeżeli użycie więcej niż trzech poziomów nagłówków ma sens dla tworzonego dokumentu, wówczas należy wykorzystać te znaczniki. Następnie za pomocą arkuszy styłów można je wyświetlić w oczekiwany sposób.
+          </p>         
+        <div class="prev-nav clearfix">
+          <a href="attributes.html" class="nav-left" title="Atrybuty HTML">Poprzednia</a> 
+          <a href="paragraph.html" class="nav-righ" title="Akapity HTML">Następna</a>
+        </div> 
+        <footer> 
+           Sokolov Kostiantyn © 2019 r. 
+        </footer>     
+       </div>      
+     </section>           
+   </div> 
+</body>
+</html>

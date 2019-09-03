@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <meta name="viewport" content="width=device-width">
+ <meta name = "description" content = "Materiału na temat atrybuty HTML."> 
+ <meta name = "author" content = "Kostiantyn Sokolov"> 
+ <link rel="stylesheet" type="text/css" href="../styles/style.css"> 
+ <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+ <script src=http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js></script>
+ <script src="../js/menu.js"></script>
+ <title>Atrybuty HTML</title>
+</head>
+<body>  
+<header>
+    <div id="top-header" class="clearfix">
+     <div id="site-name"><a href="../index.html">HTML BOOK</a></div>
+     <div id="site-description">THE&nbsp; WORLD'S&nbsp; WEB&nbsp; DEVELOPER&nbsp; SITE</div>
+    </div>        
+		<nav>      
+			 <ul id="top-menu" class="clearfix">
+         <li>
+          <div id='top-nav-icon'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+         </li>       
+         <li><a href="../html/introduction.html">html</a></li>
+         <li><a href="../css/basics-css.html">css</a></li>
+         <li><a href="../javascript/introduction.html">javascript</a></li>
+       </ul>
+   	 </nav>   	 
+ </header>	
+<div class="clearfix wrapper">
+    <section id="sidebar">
+      <div class="sidebar-content">
+        <h2>HTML</h2>
+      <ul class="list-sid-bar">
+        <li><a href="introduction.html">Wprowadzenie</a></li>
+        <li><a href="redactors.html">Edytory</a></li>
+        <li><a href="basics.html">Podstawy</a></li>
+        <li><a href="attributes.html">Atrybuty</a></li> 
+        <li><a href="headers.html">Nagłówki</a></li> 
+        <li><a href="paragraph.html">Akapity</a></li> 
+    </ul>
+  </div>  
+</section>  
+<section id="main">   
+   <div class="main-contents"> 
+     <h1>Atrybuty HTML</h1>
+     <div class="prev-nav clearfix">
+         <a href="basics.html" class="nav-left" title="Poznajemy podstawy HTML">Poprzednia</a> 
+         <a href="headers.html" class="nav-righ" title="Nagłówki HTML">Następna</a>
+      </div>
+     <p>
+        Znaczniki mogą mieć wewnątrz dodatkowy tekst dostarczający kolejnych imformacji o danym znaczniku. Te informacje są nazywane 
+        <b>atrybutami</b> i zwykle przyjmują postać pary <span>nazwa</span>=<span class="col-green">wartość</span> umieszczonych po nazwie znacznika i spacji. 
+     </p>
+     <div class="example-content">          
+        <div class="example">            
+        <i>&lt;nazwaznacznika</i> nazwaatrybutu="<span class="col-green">wartośćatrybutu"</span><i>&gt;</i><br><span>&nbsp;&nbsp;Dowolny tekst<br></span>
+        <i>&lt;/nazwaznacznika&gt;</i>
+        </div>
+      </div> 
+     <p>
+         Znaczniki HTML nie rozróżniają wielkości liter i dlatego można je zapisywać literami dużymi, małymi lub połączeniem obu stylów. Stąd 
+       &lt;HTMNL&gt; oznacza dokładnie to samo co &lt;html&gt; i &lt;HtmL&gt;. Atrybuty również nie rozróżniają wielkości liter.
+    </p>    
+     <p>
+       Elementy HTML mogą być modyfikowane za pomocą atrybutów umieszczanych wewnątrz znacznika otwierającego element. Wiele elementów obsługuje specjalizowane atrybuty, a również mamy kilka elementów globalnych możliwych do użycia w dowolnym znaczniku. Na przykład atryut 
+       <span>id</span> jest używany w celu wskazania indentyfikatora unikatowo identyfikującego element na stronie. Te identyfikatory są używane wraz z kodem javaScript i kaskadowymi arkuszami styłów.
+     </p>
+      <div class="example-content">          
+        <div class="example">            
+        <i>&lt;h1</i> id="<i class="col-green">top-heading</i>"<i>&gt;</i><span>Atrybuty HTML</span><i>&lt;/h1&gt;</i>
+        </div>
+      </div>
+      <p>
+         Atrybut został umieszczony wewnątrz znacznika otwierającego. Istnieje możliwość umieszczenia wielu atrybutów w pojedynczym znaczniku, jak jest w poniższym przykładzie.
+      </p>
+      <div class="example-content">          
+          <div class="example">            
+            <i>&lt;h1</i> id="<i class="col-green">top-heading</i>" class=<i class="col-green">"bold"</i><i>&gt;</i><span>Atrybuty HTML</span><i>&lt;/h1&gt;</i>
+          </div>
+       </div>
+       <p>
+           Atrybut class to kolejny atrybut globalny, który może być wykorzystany w celu zdefiniowania dowolnej grupy elementów. Tę samą klasę można przypisać wielu elementom.
+       </p>
+        <div class="prev-nav clearfix">
+         <a href="basics.html" class="nav-left" title="Poznajemy podstawy HTML">Poprzednia</a> 
+         <a href="headers.html" class="nav-righ" title="Nagłówki HTML">Następna</a>
+        </div>    
+        <footer> 
+         Sokolov Kostiantyn © 2019 r. 
+        </footer>
+      </div>    
+  </section>
+ </div>
+</body>
+</html>
