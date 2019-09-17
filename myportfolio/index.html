@@ -1,0 +1,129 @@
+﻿
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#2F3438">
+    <title>Kostiantyn Sokolov Junior Front End Developer</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+  <body>
+    <header class="header" id="header">
+      <nav class="header__nav">
+        <button class="top-nav-icon">
+          <div class="hambrg-btn">
+            <span class="hambrg-btn-inner"></span>
+            <span class="hambrg-btn-inner"></span>
+            <span class="hambrg-btn-inner"></span>
+          </div>
+        </button>
+        <ul class="main-menu">
+          <li class="menu-item">
+            <a href="#header" class="menu-link-item scroll">Start</a>
+          </li>
+          <li class="menu-item">
+            <a href="#aboutMe" class="menu-link-item scroll">O mnie</a>
+          </li>
+          <li class="menu-item">
+            <a href="#portfolio" class="menu-link-item scroll">Portfolio</a>
+          </li>
+          <li class="menu-item">
+            <a href="#contact" class="menu-link-item scroll">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="welcome-text">Dzień dobry, nazywam się Kostiantyn Sokolov.<br>Jestem Junior Frontend Developerem.</h1>
+      <a href="#aboutMe" class="scroll-down-btn scroll" role="button" tabindex="0">
+       <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#ffffff" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
+      </a>
+    </header>
+    <main class="main">
+      <section class="about-me section-simple" id="aboutMe">
+        <div class="about-me__container">
+          <h2 class="main-section-title">O MNIE</h2>
+          <div class="about-me__row">
+            <figure class="information-about-me">
+              <img src="images/avatar.jpg" class="my-foto" alt="Kostiantyn Sokolov">
+              <figcaption class="information-about-me__description-photo">Dzień dobry, nazywam się Kostiantyn Sokolov. Uczę się na technika informatyka. Moją pasją jest tworzenie stron internetowych. Od 2018 roku
+                rozwijam swoje Front-End-owe umiejętności (HTML5, CSS3, JS ES6, RWD, Bootstrap 4, cięcie layout-ów stron
+                WWW z Photoshop).
+              </figcaption>
+            </figure>
+            <div class="skills">
+              <div class="skills-item">HTML5</div>
+              <div class="skills-item">CSS3</div>
+              <div class="skills-item">JS ES6</div>              
+              <div class="skills-item">PSD</div>
+              <div class="skills-item">RWD</div>
+              <div class="skills-item skills-item--less-font">Boot-<br>strap 4</div>
+              <div class="skills-item">PHP</div>             
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio section-simple" id="portfolio">
+        <div class="portfolio-container">
+          <h2 class="main-section-title main-section-title--less-mb">PORTFOLIO</h2>
+          <div class="portfolio-projects-container">
+            <section class="portfolio-project">
+              <div class="project-img-container">
+                <img src="images/portfolio/htmlbook.png" class="project__img" alt="htmlbook projekt">
+              </div>
+              <div class="project-descrptn-container">
+                <h3 class="project-title">HTML BOOK</h3>
+                <p class="portfolio-project__description">
+                     Strona z informacjami o html, css, js.
+                  <span class="project-technolgies">(HTML5, CSS3, JS, RWD, Photoshop)</span>
+                </p>
+                <div class="projects-links">
+                  <a href="https://sokolovk.github.io/htmlbook" class="preview-link" target="_blank">Pogląd</a>
+                  <a href="https://github.com/sokolovk/sokolovk.github.io/tree/master/htmlbook" class="github-link" target="_blank">GitHub</a>
+                </div>
+              </div>
+            </section>
+            <section class="portfolio-project">
+              <div class="project-img-container">
+                <img src="images/portfolio/artificial.png" class="project__img" alt="htmlbook projekt">
+              </div>
+              <div class="project-descrptn-container">
+                <h3 class="project-title">Artificial Casting</h3>
+                <p class="portfolio-project__description">
+                   Pocięty z Photoshop layout strony WWW.
+                  <span class="project-technolgies">(HTML5, CSS3, Photoshop)</span>
+                </p>
+                <div class="projects-links">
+                  <a href="https://sokolovk.github.io/Artificial-casting/" class="preview-link" target="_blank">Pogląd</a>
+                  <a href="https://github.com/sokolovk/sokolovk.github.io/tree/master/Artificial-casting" class="github-link" target="_blank">GitHub</a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="contact section-simple" id="contact">
+        <div class="contact-container">
+          <h2 class="main-section-title title-medium-mb">KONTAKT</h2>
+          <p><b>E-mail</b></p> 
+          <p>sokolovkostiantyn@gmail.com</p><br>          
+          <p><b>Telefon</b></p>
+          <p> 791-705-518</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <address class="copyright">
+        <span class="copyright__copy">
+          &copy;
+          <span class="copyright__year">2019</span>
+        </span>
+        <span class="copyright__author">Kostiantyn Sokolov</span>
+        <span class="copyright__rights-reserved">All Rights Reserved.</span>
+      </address>
+      <a href="#header" class="scroll-to-top-btn scroll">powrót do góry</a>
+    </footer>
+    <script type="text/javascript" src="bundle.js"></script>
+ </body>
+</html>
