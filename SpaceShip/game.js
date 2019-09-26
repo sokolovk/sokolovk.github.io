@@ -42,7 +42,7 @@ canvas.addEventListener("click", function(){
  elgameover.onclick = function(){
   aster = [], ship = {x:370, y:500};
   elgameover.style.display="none";
-  level=1, life = 1, spead_ast=1, aster_quan = 3, score = 0, timer=0;
+  level=1, life = 1, spead_ast=1, aster_quan = 27, score = 0, timer=0;
   game();
 }
       
