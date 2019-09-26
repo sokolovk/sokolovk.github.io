@@ -45,7 +45,7 @@ a{cursor: pointer;}
 }
 
 .bg-myphoto-welcome{
-	background-image: url('../images/skyline.png');
+	background-image: url('../images/skyline.jpg');
 	background-size: cover;
 	color: #504747;
 }
