@@ -1,0 +1,111 @@
+﻿h1,h2,h3,h4,h5,h6,.nav,.navbar{
+	font-family:'Poiret One',cursive
+}
+
+body{font-family:'Lato',cursive}
+
+a{cursor: pointer;}
+
+.myph-carousel-height{
+	overflow: hidden;
+}
+
+.myphoto-section{min-height: 250px;}
+
+.myph-carousel-height{ height: 130px; } 
+
+@media(min-width: 768px){
+  .myph-carousel-height{ height: 260px;}
+  .myphoto-section{min-height: 350px;}
+}
+
+@media(min-width: 992px){
+  .myph-carousel-height{height: 345px;}
+  .myphoto-section{min-height: 400px;}
+}
+
+.fixed-top{
+	position: fixed;
+	top: 0;	left: 0; right: 0;
+	z-index: 1000;
+
+}
+
+.bg-myphoto-dark{
+	background-color: #504747;	
+}
+
+.bg-myphoto-dark, .nav-tabs a{
+	color: #fff;
+}
+
+.bg-myphoto-light{
+	background-color: #fff;
+    color: #504747;
+}
+
+.bg-myphoto-welcome{
+	background-image: url('../images/skyline.png');
+	background-size: cover;
+	color: #504747;
+}
+
+.navbar-myphoto{
+	background-color:#504747;
+	border-color:black;
+	border-radius:0;
+	margin-bottom:0;
+}
+
+.navbar-myphoto .navbar-brand{
+	color:white;
+	font-weight:bold;
+}
+
+.navbar-myphoto .nav-item > .nav-link{
+	color:white;
+}
+
+.navbar-myphoto .nav-item > .active{
+	color:#C5C217!important;
+	text-decoration:underline;
+}
+
+.navbar-myphoto .nav-item > .nav-link:hover{
+	background-color:#504747;
+	color:gray;
+}
+
+.navbar-myphoto .nav-pills > li.active > a{
+	background-color:#504747;
+	color:gray;
+}
+
+.navbar-myphoto .dropdown-menu > a:hover,.navbar-myphoto .dropdown-menu > a:focus,.navbar-myphoto .dropdown-menu > .active > a:focus{
+	color:gray;
+	background-color:#504747;
+}
+
+.navbar-myphoto > .navbar-toggler{
+	color:white;
+}
+
+.nav-pills > .active > a,.nav-pills > .active > a:hover{
+	background-color:grey;
+}
+
+.navbar-myphoto .dropdown-menu {
+    background-color: #504747;
+    border-color: black;
+}
+
+.navbar-myphoto .dropdown-menu > a  {
+    color: white;
+    background-color: #504747;
+}
+
+.nav-pills .nav-link.active,.nav-pills .nav-link.active:focus,.nav-pills .nav-link.active:hover,.nav-pills .nav-item.open .nav-link,
+.nav-pills .nav-item.open .nav-link:focus,.nav-pills .nav-item.open .nav-link:hover{
+	background-color:grey;
+}
+
