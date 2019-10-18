@@ -1,4 +1,7 @@
-﻿*{
+﻿
+/*================Basic setting*=========================*/
+
+*{
   box-sizing: border-box;
   -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 	
@@ -10,12 +13,11 @@ body{
   min-width: 320px;
   max-width: 1920px; 
   width: 100%;
-  margin: 0 auto;
-   
+  margin: 0 auto;   
 }
 
 li{
-   list-style-type: none;
+  list-style-type: none;
 }
 
 a, input[type="button"]{
@@ -43,34 +45,7 @@ a, input[type="button"]{
 }
 
 .inline{
-	display: inline-block;
-}
-
-.w-10{
-	width: 10%;
-}
-
-.w-40{
-	width: 40%;
-}
-
-.w-50{
-	width: 50%;
-}
-.w-70{
-	width: 70%;
-}
-
-.w-100{
-	width: 100%;
-}
-
-.pt-3{
-	padding-top: 30px;
-}
-
-.pt-7{
-	padding-top: 70px;
+   display: inline-block;
 }
 
 /* ===============HEADER*=============================*/
@@ -131,6 +106,8 @@ nav li:hover{
    -moz-transition: 0.5s all;
 }
 
+
+/* ===============Section feature post=============================*/
 .feature-post{
   background: url('images/background-header.jpg') no-repeat;
   background-size: cover;
@@ -168,31 +145,25 @@ nav li:hover{
    min-height: 120px;
    vertical-align: middle;   
 }
-
 /* ===============About us=============================*/
-
 .aboust-us-inner{
 	padding: 125px 4% 100px 4%;
 	color: #4F4F4F;
 	font-size: 1.25em;
 	margin: 0 auto;
 }
-
 .aboust-us-inner h2{
     padding-left: 20%;	
 	color: #3C3C3C;
 	font-size: 3.57em;
 	width: 1170px;
 }
-
 .post-header{
 	padding-top: 70px;
 }
-
 .aboust-us-inner div{
 	font-family: SourceSans;
 }
-
 .about-img{
    display: block;
    margin: 0 auto;  
@@ -206,38 +177,39 @@ nav li:hover{
 	display: block;
 	width: 100%;
 }
-
 .aboust-content-img{
    display: inline-block;
    width: 20%;
 }
-
 .aboust-content-txt{
   display: inline-block;
   width: 70%;
 }
 
+.button-container{
+	text-align: center;
+	padding-top: 30px;
+}
+
 .button-feature-post{
-	background-color: #F85035;
-	outline: none;
+	background-color: #F85035;	
 	border: none;
 	color: #fff!important;
 	padding: 15px 38px;
 	border-radius: 25px;
+	margin: 0 auto;
     -moz-border-radius: 25px; 
     box-shadow: 4px 5px 10px  #ccc; 
     -webkit-box-shadow: 4px 5px 10px  #ccc;
     -moz-box-shadow: 4px 5px 10px  #ccc;  
-  
 }
-
 .button-feature-post:hover{
 	padding: 18px 38px;
 	transition: 0.5s;
 	-moz-transition: 0.5s;
 }
-
 .posts-container{
+	padding-top: 70px;
 	display: flex;
 	display: -webkit-flex;
 	justify-content:space-between;
@@ -252,14 +224,12 @@ nav li:hover{
   padding: 50px 6%;
   color: #fff;
 }
-
 .contact-us-inner h2{
 	padding-left: 5%;
 	font-size: 3.57em;
 	font-family: Montserrat;
 
 }
-
 .contact-container{
 	font-family:SourceSans; 
 	display: flex;
@@ -293,7 +263,7 @@ nav li:hover{
 	margin-bottom: 58px;
 }
 
-.faq-container p, summary{
+.faq-container p{
 	font-size: 2em;
    padding: 10px 0;
    color: #4F4F4F;
@@ -416,7 +386,6 @@ footer li{
 
 /* ===============Fonts=============================*/
 
-
 @font-face{
   font-family: Montserrat;
   src: url('fonts/Montserrat.woff2') format('woff2'),
@@ -428,8 +397,7 @@ footer li{
 	font-family: SourceSans;
 	src: url('fonts/SourceSansPro-It.woff2') format('woff2'),
     url('fonts/SourceSansPro-It.woff') format('woff'),
-    url('fonts/SourceSansPro-It.ttf') format('ttf');  
-
+    url('fonts/SourceSansPro-It.ttf') format('ttf'); 
 }
 
 /* ===============Color=============================*/
