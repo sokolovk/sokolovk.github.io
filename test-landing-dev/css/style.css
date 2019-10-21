@@ -769,6 +769,12 @@ nav{
     color: #4F4F4F;    
     border-bottom: 1px solid #D1D1D1;   
 } 
+
+.accordion-active{
+  color: #120292!important;
+  font-weight: 700!important;
+}
+
 /*=============blocks with content======== */
 .msg {
   position: relative;

@@ -29,3 +29,14 @@ var clientWidth;
       el_nav.classList.remove('nav-toggle');                  
     }      
   }
+
+//accordion title change color
+var el_accor_li = document.querySelectorAll(".accordion li");
+  
+for(var i=0; i<el_accor_li.length; i++){
+  el_accor_li[i].addEventListener('click', changeColor);
+}
+
+ function changeColor(){
+    this.children[2].classList.toggle('accordion-active');
+  }
