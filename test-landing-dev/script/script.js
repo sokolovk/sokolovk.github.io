@@ -29,23 +29,3 @@ var clientWidth;
       el_nav.classList.remove('nav-toggle');                  
     }      
   }
-
-
-/*
-var el_sidebar = document.querySelector('#sidebar').classList;
-var el_main = document.getElementById('main');
-var main_class = document.querySelector('.main-contents').classList;
-
-el_top_icon.onclick = function(){
-  this.classList.toggle("change-nav-icon");
-  el_sidebar.toggle('sidebar-active');
-  main_class.toggle('margin-left');       
-}
-
-el_main.onclick = function(){      
-  if(el_sidebar.contains('sidebar-active') == true)
-    el_sidebar.remove('sidebar-active');
-
-  if(main_class.contains('margin-left') == true)
-     main_class.remove('margin-left');
-} */
