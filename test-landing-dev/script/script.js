@@ -40,3 +40,24 @@ for(var i=0; i<el_accor_li.length; i++){
  function changeColor(){
     this.children[2].classList.toggle('accordion-active');
   }
+
+
+//slowing scroll
+
+ $(window).on("load", function() {    
+    $('a:not(.spu-clickable)[href*="#"]:not([href="#"])').click(function(){
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') ||
+        location.hostname == this.hostname){
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length){
+          $("html, body").animate({            
+            scrollTop: target.offset().top - 10
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+
+ 
