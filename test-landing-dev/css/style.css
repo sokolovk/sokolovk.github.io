@@ -14,7 +14,7 @@ a{
 }
 
 a, 
-input[type="button"]{
+button{
   color: inherit;
   cursor: pointer;   
 }
@@ -84,13 +84,13 @@ h3{
 
 #header-top{  
   background-color: #292929;
-  font-size: 8px;
+  font-size: 11px;
   color: #C6C6C6;
   padding: 6px 0 3px 0;
 }
 
 .social-icon{
-  width: 25%;
+  width: 24%;
 }
 
 .social-icon li{
@@ -98,30 +98,26 @@ h3{
 }
 
 .social-icon img{
-  width: 15px;
+  width: 18px;
 }
 
-.skype-email{  
-  width: 75%; 
+.skype-email{ 
+   text-align: right;
+   padding-top: 4px; 
+   width: 74%;
 }
 
-.skype-email a{  
+.skype-email a{ 
+ padding-right: 3px; 
+ display: inline-block;
  transition: color .4s;
  -moz-transition: color .4s; 
  -webkit-transition: color .4s;  
 }
 
 .skype-email img{
-  width: 12px;
+  width: 16px;
   padding-right: 5px;
-}
-
-.skype-email div:first-child{
-  width: 40%;
-}
-
-.skype-email div:last-child{
-  width: 60%;
 }
 
 .skype-email a:hover{
@@ -131,22 +127,19 @@ h3{
 @media(min-width: 768px){
 
   #header-top{
-    font-size: 12px;
+    font-size: 15px;
   } 
   .social-icon img{
     width: 25px;
   }
 
-  .social-icon{
-    width: 35%;
-  }
-  .skype-email{  
-    width: 45%;
-    padding-top: 5px; 
-  }
   .skype-email img{
-    width: 15px;
+    width: 22px;
     padding-right: 6px;
+  }
+
+  .skype-email a{
+   padding-right: 8px;
   }
   
 }
@@ -155,14 +148,7 @@ h3{
 
   #header-top{
     font-size: 17px;
-  } 
-
-  .social-icon{
-    width: 35%;
-  }
-  .skype-email{  
-    width: 38%;    
-  } 
+  }  
   
 }
 
@@ -175,7 +161,7 @@ h3{
 
 .logo{
   color: #3648CB;
-  font: 12px montserrat;  
+  font: 16px montserrat;  
   padding-left: 10px;  
 }
 
@@ -204,7 +190,7 @@ nav{
 
 .nav-toggle li{
    display: block;
-   font-size: 15px;
+   font-size: 16px;
 }
 
 .nav-toggle{
@@ -240,12 +226,10 @@ nav{
   #top-nav-icon div, #top-nav-icon span{
     display: none;  
   }
-
-  .logo{ 
-    font-size: 18px;  
-  }
+  
   nav li{
-  padding: 5px 10px 0 10px;
+    font-size: 18px;
+    padding: 0 10px;
   }
 
 }
@@ -256,8 +240,8 @@ nav{
     font-size: 32px;  
   }
   nav li{
-   padding: 15px 15px 0 15px;
-   font-size: 20px;
+   font-size: 22px;
+   padding: 0 17px;  
   }
 
 }
@@ -284,6 +268,7 @@ nav{
 }
 
 .feature-inner p{
+   font-size: 12px;
    padding-top: 5px;
 }
 
@@ -299,15 +284,16 @@ nav{
 }
 
 .contact-us{
+  font-size: 12px;
   padding-top: 5px;
 }
 
 .contact-us span{
-   vertical-align: 50%;  
+   vertical-align: 112%;  
 }
 
 .contact-us img{
-  width: 20px;
+  width: 38px;
 }
 
 @media(min-width: 768px){
@@ -458,7 +444,7 @@ nav{
     padding: 20px 0 40px 0;
  }
 
- .button-container input{
+ .button-container button{
     background-color: #F85035;
     border: none;
     border-radius: 20px;
@@ -474,7 +460,7 @@ nav{
     padding: 5px 10px;
  }
 
- .button-container input:hover{
+ .button-container button:hover{
    padding-top: 7px;
  }
 
@@ -531,12 +517,12 @@ nav{
      padding: 30px 0 50px 0;
   }
 
-  .button-container input{    
+  .button-container button{    
     font-size: 14px;    
     padding: 8px 16px;
   }
 
-   .button-container input:hover{
+   .button-container button:hover{
       padding-top: 10px;
     }
 
@@ -588,7 +574,7 @@ nav{
      padding: 55px 0 95px 0;
   }
 
-  .button-container input{ 
+  .button-container button{ 
     border-radius: 33px;
     -moz-border-radius: 33px;
     -webkit-border-radius: 33px;   
@@ -596,7 +582,7 @@ nav{
     padding: 20px 30px;
   }
 
-  .button-container input:hover{
+  .button-container button:hover{
       padding-top: 23px;
    }
 
@@ -913,6 +899,7 @@ ul li i:after {
   }
 
   .nav-footer li{
+     font-size: 12px;
      padding: 0 5px;
   }
 
@@ -944,7 +931,7 @@ ul li i:after {
   @media(min-width: 465px){
     
     .nav-footer li{
-       font-size: 13px;
+       font-size: 14px;
        padding: 0 12px;
     }
 
