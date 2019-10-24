@@ -8,40 +8,59 @@
 </head>
 <body> 
    <header>
-     <div id="header-top">
+     <div class="header-top">
        <div class="container clearfix">                             
             <div class="social-icon float-l">
-               <ul>
-                 <li><a href="#"><img src="images/fb.png" alt=""></a></li>
-                 <li><a href="#"><img src="images/google-icon.png" alt=""></a></li>
-                 <li><a href="#"><img src="images/twi.png" alt=""></a></li>
+               <ul class="list">
+                 <li class="list_inline social-icon__item">
+                   <a class="link" href="#"><img class="social-icon__img" src="images/fb.png" alt=""></a>
+                 </li>
+                 <li class="list_inline social-icon__item">
+                   <a class="link" href="#"><img class="social-icon__img" src="images/google-icon.png" alt=""></a>
+                 </li>
+                 <li class="list_inline social-icon__item">
+                   <a class="link" href="#"><img class="social-icon__img" src="images/twi.png" alt=""></a>
+                 </li>
                </ul>
              </div>         
              <div class="skype-email float-r">               
-                  <a href="#"><img src="images/skype.png" alt="">Personalskype</a>               
-                  <a href="#"><img src="images/email.png" alt="">info@personalmail.com</a>
-                </div>              
+                  <a class="link skype-email__link" href="#"><img class="skype-email__img" src="images/skype.png" alt="">
+                    <span class="skype-email__link-text">Personalskype</span></a>               
+                  <a class="link skype-email__link" href="#"><img class="skype-email__img" src="images/email.png" alt="">
+                    <span class="skype-email__link-text">info@personalmail.com</span></a>
+               </div>              
             </div>
-         </div>        
-       </div>
-       <div id="nav-menu">
+        </div>
+        <div class="nav-container">
           <div class="container clearfix">
              <div class="logo float-l">
-                New <span>Digital</span>
+                <p class="logo__text">New <span class="logo__text_primary">Digital</span></p>
              </div>
-             <div id='top-nav-icon' class="float-r">
-                 <span></span>
-                 <span></span>
-                 <span></span>
+             <div class='nav__container-icon float-r'>
+                 <span class="nav__icon"></span>
+                 <span class="nav__icon"></span>
+                 <span class="nav__icon"></span>
                </div>
-             <nav class="float-r">              
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#about" class="scroll">About us</a></li>
-                  <li><a href="#">Why us?</a></li>
-                  <li><a href="#faq" class="scroll">FAQ</a></li>
-                  <li><a href="#feature-posts" class="scroll">Post now</a></li>
-                  <li><a href="#">Blog</a></li>                 
+             <nav class="nav float-r">              
+                <ul class="list">
+                  <li class="list_inline nav__item">
+                    <a class="link nav__link" href="#">Home</a>
+                  </li>
+                  <li class="list_inline nav__item">
+                    <a class="link nav__link scroll" href="#about">About us</a>
+                  </li>
+                  <li class="list_inline nav__item">
+                    <a class="link nav__link" href="#">Why us?</a>
+                  </li>
+                  <li class="list_inline nav__item">
+                    <a class="link nav__link scroll" href="#faq">FAQ</a>
+                  </li>
+                  <li class="list_inline nav__item">
+                    <a class="link nav__link scroll" href="#feature-posts">Post now</a>
+                  </li>
+                  <li class="list_inline nav__item">
+                    <a  class="link nav__link" href="#">Blog</a>
+                  </li>                 
                 </ul>              
              </nav>            
           </div>
@@ -49,20 +68,24 @@
     </header> 
     <section id="feature-posts">
       <div class="container">
-         <div class="feature-inner">
-            <h1>Feature Posts</h1>
+         <div class="feature-inner feature_color feature-inner__price">
+            <h1 class="feature-inner__title">Feature Posts</h1>
             <div class="feature-price">
                From 250$
             </div>
-            <p>Posts That Contain Interviews Or News Stories About You,</p> 
-            <p>Your Company Or Product/Service</p>
-            <h3>You can contact us on: </h3>
+            <p class="feature-inner__text">Posts That Contain Interviews Or News Stories About You,</p> 
+            <p class="feature-inner__text">Your Company Or Product/Service</p>
+            <h3 class="feature-inner__title-contact">You can contact us on: </h3>
             <div class="contact-us clearfix">
-               <div>
-                 <a href="#"><img src="images/skype1.png" alt=""><span>personalskape</span></a>
+               <div class="contact-container">
+                 <a class="link contact-us__link" href="#">
+                   <img class="contact-us__img" src="images/skype1.png" alt=""><span class="contact__text">personalskape</span>
+                 </a>
                </div>
-               <div>
-                   <a href="#"><img src="images/email1.png" alt=""><span>info@personalmail.com</span></a>
+               <div class="contact-container">
+                  <a class="link contact-us__link" href="#">
+                    <img class="contact-us__img" src="images/email1.png" alt=""><span class="contact__text">info@personalmail.com</span>
+                  </a>
                </div>
             </div>
          </div>
@@ -71,34 +94,34 @@
     <section id="about">
       <div class="container">
          <div class="about-inner">
-            <h2>About us</h2>
+            <h2 class="about-inner__title">About us</h2>
             <div class="clearfix">
-               <div class="about-img">
-                 <img src="images/about-use.jpg" alt="">
+               <div class="about-picture__container">
+                 <img class="about-picture__img" src="images/about-use.jpg" alt="">
                </div>
               <div class="about-content">
-                <div>
-                  <img src="images/triangle1.png" alt="">
+                <div class="about-content__block-img">
+                  <img class="about-content__img" src="images/triangle1.png" alt="">
                 </div>                
-                <div>
+                <div class="about-content__block-content">
                    We place feature articles for clients on news and niche relevant blog sites. 
                    Articles can contain interviews with you or  news where you or your company is the source throughout the post. 
                 </div>
               </div>
               <div class="about-content">
-                <div>
-                  <img src="images/triangle2.png" alt="">
+                <div class="about-content__block-img">
+                  <img class="about-content__img" src="images/triangle2.png" alt="">
                 </div>
-                <div>
+                <div class="about-content__block-content">
                    We can also arrange product or service promotion within the post on certain platforms.
                    All sites are authority sites and importantly are SEM  Rush checked for real traffic as well as DA and Trust Flow.
                 </div>
               </div>
               <div class="about-content">
-                <div>
-                  <img src="images/triangle3.png" alt="">
+                <div class="about-content__block-img">
+                  <img class="about-content__img" src="images/triangle3.png" alt="">
                 </div>
-                <div>
+                <div class="about-content__block-content">
                     We make sure that you get branded links to your site that are do follow for SEO value.
                     If any sites do not allow features  we have arrangements to get a quote and a link as a minimum for our clients. 
                     This way you are still able to garner the authority of being a contributor to a niche relevant article. 
@@ -106,29 +129,29 @@
                 </div>
               </div>
             </div>
-            <div class="button-container">
-              <button type="button" name="get-feature-post">Get a Feature Post</button>
+            <div class="about-inner__container-btn">
+              <button class="about-inner__item-btn" type="button" name="get-feature-post">Get a Feature Post</button>
             </div>
-            <h3>Post start From <span>Only $250</span></h3> 
+            <h3 class="about-inner__post-title">Post start From <span class="about-inner__post-title_text_red">Only $250</span></h3> 
             <div class="post-inner">
-              <div>
-                 <img src="images/content.png" alt=""><br>
+              <div class="post-inner__container">
+                 <img class="post-inner__img" src="images/content.png" alt=""><br>
                  Content Is Included<br> In The Price
               </div>
-              <div>
-                <img src="images/pay.png" alt=""><br>
+              <div class="post-inner__container">
+                <img class="post-inner__img" src="images/pay.png" alt=""><br>
                   Payments made up front through                 
               </div>
-              <div>
-                <img src="images/ellipse.png" alt=""><br>
-                Infographics or Designed Images Graphics Are Extra,  CAN BE Arranged At 
+              <div class="post-inner__container">
+                <img class="post-inner__img" src="images/ellipse.png" alt=""><br>
+                 Infographics or Designed Images Graphics Are Extra,  CAN BE Arranged At 
                  The Time Of Ordering
               </div>
-              <div>
-                <img src="images/discaunts.png" alt=""><br>
+              <div class="post-inner__container">
+                <img class="post-inner__img" src="images/discaunts.png" alt=""><br>
                   Discounts are available for bulk 
                   orders and regular clients. These can 
-                 be discussed during the ordering process
+                  be discussed during the ordering process
               </div>
             </div>       
          </div>
@@ -137,31 +160,31 @@
     <section id="contact">   
       <div class="container">
          <div class="contact-inner">
-            <h2>Contact Us</h2>
-            <div class="contact-info">
-               <div>
-                  <div class="cont-img">
-                    <img src="images/kami.png" alt="">
+            <h2 class="contact-inner__title">Contact Us</h2>
+            <div class="contact-inner__content-container">
+               <div class="contact-inner__block-container">
+                  <div class="contact-inner__img-wrapper">
+                    <img class="contact-inner-img" src="images/kami.png" alt="">
                   </div>
-                  <div class="cont-text">
+                  <div class="contact-inner__text-wrapper">
                      Kami House, 122 - 161<br> 
                      City Road, Bristol United<br> 
                      Kingdom, EC3V 5NB
                   </div>
                </div>
-               <div>
-                  <div class="cont-img">
-                   <img src="images/email1.png" alt="">
+               <div class="contact-inner__block-container">
+                  <div class="contact-inner__img-wrapper">
+                   <img class="contact-inner-img" src="images/email1.png" alt="">
                   </div>
-                  <div class="cont-text">
+                  <div class="contact-inner__text-wrapper">
                     info@personalmail.com
                   </div>
                </div>
-               <div>
-                 <div class="cont-img">
-                    <img src="images/skype1.png" alt="">
+               <div class="contact-inner__block-container">
+                 <div class="contact-inner__img-wrapper">
+                    <img class="contact-inner-img" src="images/skype1.png" alt="">
                   </div>
-                  <div class="cont-text">
+                  <div class="contact-inner__text-wrapper">
                      personalskype
                   </div>                  
                 </div>
@@ -172,39 +195,39 @@
     <section id="faq">
        <div class="container">
           <div class="faq-inner">
-             <h2>FAQ</h2>
+             <h2 class="faq-inner__title">FAQ</h2>
              <div class="accordion">
-                <ul>
-                  <li>
-                   <input type="checkbox" checked>
-                   <i></i>
-                    <h3 class="title_block">Can I use my own content?</h3>
-                    <div class="msg">
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>                
+                <ul class="list accordion__list">
+                  <li class="accordion__item">
+                   <input class="accordion__checkbox" type="checkbox" checked>
+                   <i class="accordion__toggle"></i>
+                    <h3 class="accordion__title">Can I use my own content?</h3>
+                    <div class="accordion__msg-wrapper">
+                      <p class="accordion__msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>                
                      </div>
                    </li>
-                  <li>
-                     <input type="checkbox" checked>
-                     <i></i>
-                     <h3 class="title_block">Are feature guest posts any good for SEO?</h3>
-                     <div class="msg">                
-                       <p>In short – YES. They often contain branded links and any link is surrounded by incredibly</p>
+                  <li class="accordion__item">
+                     <input class="accordion__checkbox" type="checkbox" checked>
+                     <i class="accordion__toggle"></i>
+                     <h3 class="accordion__title">Are feature guest posts any good for SEO?</h3>
+                     <div class="accordion__msg-wrapper">                
+                       <p class="accordion__msg">In short – YES. They often contain branded links and any link is surrounded by incredibly</p>
                      </div>
                   </li>
-                  <li>
-                     <input type="checkbox" checked>
-                    <i></i>
-                    <h3 class="title_block">Can these pages rank for keywords themselves?</h3>
-                    <div class="msg">
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>                
+                  <li class="accordion__item">
+                     <input class="accordion__checkbox" type="checkbox" checked>
+                    <i class="accordion__toggle"></i>
+                    <h3 class="accordion__title">Can these pages rank for keywords themselves?</h3>
+                    <div class="accordion__msg-wrapper">
+                      <p class="accordion__msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>                
                     </div>
                   </li>
-                  <li>
-                    <input type="checkbox" checked>
-                    <i></i>
-                    <h3 class="title_block">Can I manipulate titles of posts to carry specific keywords?</h3>
-                    <div class="msg">
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>                
+                  <li class="accordion__item">
+                    <input class="accordion__checkbox" type="checkbox" checked>
+                    <i class="accordion__toggle"></i>
+                    <h3 class="accordion__title">Can I manipulate titles of posts to carry specific keywords?</h3>
+                    <div class="accordion__msg-wrapper">
+                      <p class="accordion__msg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>                
                     </div>
                   </li>          
                 </ul>
@@ -213,26 +236,32 @@
        </div>
     </section>
     <footer>
-       <div class="container">
-          <div class="footer-inner">             
-             <div class="nav-footer">
-                <ul>
-                   <li><a href="#">Home</a></li>
-                   <li><a href="#about">About us</a></li>
-                   <li><a href="#">Why us?</a></li>
-                   <li><a href="#faq">FAQ</a></li>
-                   <li><a href="#contact">Contact</a></li>
-                   <li><a href="#feature-posts">Post Now</a></li>
+       <div class="footer-inner">
+          <div class="container clearfix footer-inner_relative">             
+             <div class="footer-inner__nav">
+                <ul class="list footer-inner__list">
+                   <li class="list_inline footer-inner__item"><a class="link footer-inner__link" href="#">Home</a></li>
+                   <li class="list_inline footer-inner__item"><a class="link footer-inner__link" href="#about">About us</a></li>
+                   <li class="list_inline footer-inner__item"><a class="link footer-inner__link" href="#">Why us?</a></li>
+                   <li class="list_inline footer-inner__item"><a class="link footer-inner__link" href="#faq">FAQ</a></li>
+                   <li class="list_inline footer-inner__item"><a class="link footer-inner__link" href="#contact">Contact</a></li>
+                   <li class="list_inline footer-inner__item"><a class="link footer-inner__link" href="#feature-posts">Post Now</a></li>
                  </ul>
              </div>
-             <div class="logo-footer">
+             <div class="footer-inner__logo">
                 New Digital
              </div>
-             <div class="social-footer">
-               <ul>
-                  <li><a href="#"><img src="images/f-fb.png" alt=""></a></li>
-                  <li><a href="#"><img src="images/f-google.png" alt=""></a></li>
-                  <li><a href="#"><img src="images/f-tw.png" alt=""></a></li>
+             <div class="footer-inner__social-wrapper">
+               <ul class="list footer-inner__nav-footer">
+                  <li class="footer-inner__item-social list_inline">
+                    <a class="footer-inner__social-link" href="#"><img class="footer-inner__social-img" src="images/f-fb.png" alt=""></a>
+                  </li>
+                  <li class="footer-inner__item-social list_inline">
+                    <a class="footer-inner__social-link" href="#"><img class="footer-inner__social-img" src="images/f-google.png" alt=""></a>
+                  </li>
+                  <li class="footer-inner__item-social list_inline">
+                    <a  class="footer-inner__social-link" href="#"><img class="footer-inner__social-img" src="images/f-tw.png" alt=""></a>
+                  </li>
                </ul>
              </div>
           </div>
