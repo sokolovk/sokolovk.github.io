@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Git ` — allow-unrelated-histories` - Scott Spence - Medium</title>
+	<meta charset="UTF-8">		
+</head>
+<body>
+	<header>
+	  <div class="container">
+       <div class="logo-container">
+       </div>       
+       <nav class="navbar">
+       	  <li><a href="#">Become a member</a></li>       	  	
+       	  <li><a href="#">Sign-in</a></li>
+       	  <li><a href="#">get started</a></li>       	  
+       </nav>
+      </div>
+	</header>
+	<main>
+	  <section class="post-main">
+	  	<div class="container">
+		 <h1>Git ` — allow-unrelated-histories`</h1>
+		 <div class="aftor-container">
+            <img alt="Scott Spence" src="img/aftor.jpeg">
+            <p><cite>Scott Spence </cite><a href="#">Follow</a></p>
+            <p>Jun 30, 2017 · 2 min read</p>
+		 </div>
+		 <p>How to combine two separate unrelated Git repositories into one with single history timeline.</p>
+		 <p>Just adding a quick note on this…</p>
+		 <p>
+		   I had a project that started off as it’s own project but it ended up needing to 
+		   go into an already existing project, so I thought ok add it as a new branch on the 
+		   existing project with <code>git remote add origin</code> then push the changes up to 
+	       the origin then all is well with the world.
+	      </p>
+	      <p>That was until I tried to compare the branches…</p>
+	      <figure>
+	      	 <img alt="exsaple" src="img/exsaple.png">
+	      </figure>
+	      <p>
+	      	<strong>There isn’t anything to compare?</strong> Bit misleading there 
+	         as there is but the commit histories are different.
+	      </p>
+	      <p>
+	        How do you get around it, well the first Google result was a bit sparse with the details but then I found this which was more helpful.
+	      </p>
+	      <p>I needed to merge the disparate branches which is now disabled by 
+	      	default in git but can be enabled with the <code>--allow-unrelated-histories flag.</code></p>
+	      <p>
+	      	<code>git merge origin use-ts-bot --allow-unrelated-histories</code>
+	      </p>
+	      <p>
+	      	 This brought up, understandably, a few conflicts with the branch I wanted to merge with the origin.
+	      </p>
+	      <div>
+	      	<p><code>Auto-merging package.json</code></p>
+	      	<p><code>CONFLICT (add/add): Merge conflict in package.json</code></p>
+	      	<p><code>Auto-merging package-lock.json</code></p>
+	      	<p><code>CONFLICT (add/add): Merge conflict in package-lock.json</code></p>
+	      	<p><code>Auto-merging README.md</code></p>
+	      	<p><code>CONFLICT (add/add): Merge conflict in README.md</code></p>
+	      	<p><code>Auto-merging .gitignore</code></p>
+	      	<p><code>CONFLICT (add/add): Merge conflict in .gitignore</code></p>
+	      	<p><code>Automatic merge failed; fix conflicts and then commit the result.</code></p>
+	      </div>
+	      <p>
+	      	To get around this I just took the latest version of the use-ts-bot branch from my GitHub account and then and used that in place of the origin conflicts as what I’m working on will ultimately replace the master branch, so it was just a copy pasta into my VSCode then recommit the changes files.
+	      </p>
+	      <p>
+	      	 Phew! I now have a branch I can compare with the master that 
+	      	 I will one day make a PR for 😅
+	      </p>
+	      <figure>
+	      	 <img alt="exsaple" src="img/exsaple1.png">
+	      </figure>
+	      <div>
+	      	<a href="#">Git</a>
+	      	<a href="#">Github</a>
+	      	<a href="#">Learning</a>
+	      </div>
+	      <div class="wrapper">
+	        <div> 
+	         <button></button> 93 claps
+	        </div>
+	        <div class="social-container">
+               <a href="#"></a>
+               <a href="#"></a>
+               <a href="#"></a>
+               <a href="#"></a>
+               <a href="#"></a>
+	        </div>	         
+	      </div> 
+	      <div>
+	        <div class="aftor-container">
+              <img alt="Scott Spence" src="img/aftor.jpeg">
+              <p>WRITTEN BY</p>
+              <p><cite>Scott Spence </cite><a href="#">Follow</a></p>
+              <p>I like working with technology, if I learn something I try to share it.</p>
+		    </div>
+		  </div>
+		  <div>
+		  	<a href="#">See responses</a>		  	 
+		  </div>
+		 </div>
+       </section>
+       <aside>
+       	 <div class="container">
+       	 	 <h2>More From Medium</h2>
+       	 	 <div>
+       	 	 	<div>
+                 <p>More from Scott Spence</p>
+       	 	 	 <a href="#"><img src="img/img3.jpg" alt="More from Scott Spence"></a>
+       	 	 	 <a href="#"><p>How to go from scratch to Create-React-App on Windows</p></a>
+       	 	 	 <div class="aftor-container">
+                   <img alt="Scott Spence" src="img/aftor.jpeg">
+                   <p><cite><a href="#">Scott Spence </a>in..</cite></p>
+                   <p>Jun 30, 2017 · 16 min read</p>
+		          </div>
+                </div>
+                <div>
+                 <p>Related reads</p>
+       	 	 	 <a href="#"><img src="img/img3.jpg" alt="More from Scott Spence"></a>
+       	 	 	 <a href="#"><p>Deploy A Docker Container Free (on Heroku)</p></a>
+       	 	 	 <div class="aftor-container">
+                   <img alt="Scott Spence" src="img/aftor.jpeg">
+                   <p><cite><a href="#">Maciek Opała</a>in <a href="#">Software</a></cite></p>
+                   <p>Dec 24, 2018 · 5 min read</p>
+		          </div>
+                </div>
+                <div>
+                 <p>Related reads</p>
+       	 	 	 <a href="#"><img src="img/img3.jpg" alt="More from Scott Spence"></a>
+       	 	 	 <a href="#"><p>Editing files in a docker container</p></a>
+       	 	 	 <div class="aftor-container">
+                   <img alt="Scott Spence" src="img/aftor.jpeg">
+                   <p><cite><a href="#">Jim Medlock</a>in <a href="#">Chingu</a></cite></p>
+                   <p>Dec 30, 2018 · 5 min read</p>
+		          </div>
+                </div>       	 	 	 	       	 	 	 
+       	 	 </div>
+       	 </div>
+       </aside>
+	</main>
+	<footer>
+		 <div class="container">
+		 	<div>
+              <p><a href="#">Discover Medium</a></p>
+              <p>
+                Welcome to a place where words matter. On Medium, smart voices and original ideas take center stage - with no ads in sight.<a href="#"> Watch</a>
+              </p>
+		 	</div>
+		 	<div>
+		 	    <p><a href="#">Make Medium yours</a></p>
+                <p>
+                  Follow all the topics you care about, and we’ll deliver the best stories for you to your homepage and inbox.<a href="#"> Explore</a>
+               </p>
+		 	</div>
+		 	<div>
+		 		<p><a href="#">Become a member</a></p>
+                <p>
+                  Get unlimited access to the best stories on Medium — and support writers while you’re at it. Just $5/month. <a href="#"> Upgrade</a>
+               </p>
+		 	</div>
+		 	<div class="footer-medium">
+		 		<a href="#">Medium</a>
+		 		<ul>
+		 			<li><a href="#">About</a></li>
+		 			<li><a href="#">Help</a></li>
+		 			<li><a href="#">Legal</a></li>
+		 		</ul>
+		 	</div>
+		 </div>
+	</footer>
+</body>
+</html>
