@@ -1,0 +1,33 @@
+﻿/*========footer==========*/
+
+.footer{
+	padding: 25px 0;
+	background: $color-bg-footer;
+
+	&__copy{
+	  color: $color-light;
+	  font-size: $size-md;
+	  text-align: center;
+	  margin: 0;
+	}
+
+	@media(max-width: 1024px){
+		&{
+			padding: 20px 0;
+		}
+
+		&__copy{
+			font-size: $size-sm;
+		}
+	}
+
+	@media(max-width: 1024px){
+		&{
+			padding: 15px 0;
+		}
+
+		&__copy{
+			font-size: $size-xs;
+		}
+	}
+}

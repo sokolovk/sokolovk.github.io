@@ -1,0 +1,104 @@
+﻿/*========feed-back==========*/
+
+.feed-back{
+	margin: 0 auto;
+	width: 28.1%;
+
+	&__title{
+		color: $color-dark;
+		font-size: $size-medium;
+		font-weight: 700;
+		text-align: center;
+		margin: 0;
+	}
+
+	@media(max-width: 1324px){
+
+    	&{
+    		width: 50%;
+    	}
+    }
+
+    @media(max-width: 1024px){
+
+    	&{
+    		width: 65%;
+    	}
+
+    	&__title{
+    		font-size: $size-lg;
+    	}
+    }
+
+    @media(max-width: 768px){
+
+    	&{
+    		width: 75%;
+    	}
+
+    	&__title{
+    		font-size: $size-primary;
+    	}
+    }
+}
+
+
+.message-form{
+
+	padding-top: 13px;	
+
+	&__prompt{		
+	   color: $color-primary;
+	   font-size: $size-primary;
+	   padding-top: 31px;
+	   margin: 0;
+	}
+
+	&__input{
+		border: 1px solid $color-grey;
+		border-radius: 5px;
+		margin-top: 10px;	
+		padding: 0 5%;	
+		outline: none;
+		height: 50px;
+		width: 90%;
+	}
+
+	&__textarea{
+		border-radius: 5px; 
+		border: 1px solid $color-grey;
+		resize: none;
+		padding: 0 5%;
+		height: 135px;
+		width: 90%;
+	}
+
+	@media(max-width: 1024px){
+
+		&__prompt{
+			font-size: $size-md;
+			padding-top: 24px;
+		}
+
+		&__input{
+			height: 40px;
+			margin-top: 8px;
+		}
+	}
+
+	@media(max-width: 768px){
+
+		&__prompt{
+			font-size: $size-sm;
+			padding-top: 18px;
+		}
+
+		&__input{
+			border-radius: 3px;
+			height: 25px;
+			margin-top: 5px;
+		}
+
+	}
+
+}

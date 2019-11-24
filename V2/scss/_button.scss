@@ -1,0 +1,93 @@
+﻿/*========button==========*/
+
+.btn{
+
+	&--post{
+		padding-top: 37px;
+	}
+
+	&--center{
+		text-align: center;
+	}
+
+	&--submit{
+		padding-top: 51px;
+	}
+
+	&__link{		
+		background: $color-danger;		
+		display: inline-block;
+		color: $color-light;
+		font-size: $size-primary;
+		font-weight: 700;
+		padding: 19px 0;
+		text-align: center;
+		transition: all .4s;
+		min-width: 190px;
+	}
+
+	&__link--post{
+		background: $color-light;
+		border: 1px solid $color-danger;
+		color: $color-danger;
+		font-size: $size-xs;
+		text-transform: uppercase;
+		padding: 13px 0;
+		min-width: 107px
+	}
+
+	&__link--post:hover{		
+		background: $color-danger;
+		border: 1px solid $color-danger;
+		color: $color-light; 	
+	}	
+
+	&__link--submit{
+		border: none;
+		cursor: pointer;
+		outline: none;
+		min-width: 160px;
+	}
+
+	&__link--load{
+		border: none;
+		cursor: pointer;
+		outline: none;		
+	}
+
+	@media(max-width: 1024px){
+
+		&__link{
+			font-size: $size-md;
+			min-width: 160px;
+			padding: 12px 0;
+		}
+
+		&__link--post{
+		  font-size: 10px;
+		  padding: 11px 0;
+		  min-width: 96px;
+		}
+
+		&--submit{
+		padding-top: 40px;
+	    }
+	}
+
+	@media(max-width: 768px){
+
+		&__link{
+			font-size: $size-sm;
+			min-width: 110px;
+			padding: 8px 0;
+		}
+
+		&__link--post{
+		  font-size: 10px;
+		  padding: 7px 0;
+		  min-width: 96px;
+		}
+
+	}
+
+}

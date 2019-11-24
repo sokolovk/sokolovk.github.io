@@ -1,0 +1,131 @@
+﻿@import 'variables';
+
+/* =======Fonts=============*/
+
+@font-face{
+  font-family: muli;
+  font-display: auto;
+  src: url('../fonts/Muli.woff2') format('woff2'),
+       url('../fonts/Muli.woff') format('woff'),
+       url('../fonts/Muli.ttf') format('ttf');
+}
+
+/*=======general setting======*/
+
+body{
+	box-sizing: border-box;
+	font-family: muli;
+	font-size: $size-primary;
+	margin: 0;
+	overflow-x: hidden;
+
+	@media(max-width: 1024px){
+		font-size: $size-md
+	}
+
+	@media(max-width: 768px){
+		font-size: $size-sm;
+	}
+}
+
+.main-wrapper{
+  padding: 0 21.1%;
+
+  @media(max-width: 1474px){
+  	&{
+  		padding: 0 15%;
+  	}
+  }
+
+  @media(max-width: 1200px){
+  	&{
+  		padding: 0 10%;
+  	}
+  }
+
+  @media(max-width: 1024px){
+  	&{
+  		padding: 0 5%;
+  	}
+  }
+}
+
+.row{
+	display: flex;
+	justify-content: space-between;
+
+	@media (max-width: 1024px){
+		&{
+			justify-content: center;
+		}
+	}
+
+	@media (max-width: 768px){
+		&{
+			justify-content: space-between;
+		}
+	}
+}
+
+.row--reverse-x{
+	flex-direction: row-reverse;
+}
+
+.row--wrap{
+	flex-wrap: nowrap;
+
+	@media(max-width: 768px){
+		&{
+			flex-wrap: wrap;
+		}
+	}
+}
+
+.list{
+  
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+
+  @media (max-width: 1024px){
+  	padding-left: 0;
+  }
+}
+
+.link{
+	text-decoration: none;
+	display: block;
+}
+
+.bg-light{
+	background-color: $color-primary-light;
+}
+
+.img-fluid{
+	width: 100%;	
+}
+
+.container{
+	padding: 100px 0;
+
+	@media(max-width: 1024px){
+
+		&{
+			padding: 60px 0;
+		}
+	}
+
+	@media(max-width: 768px){
+
+		&{
+			padding: 40px 0;
+		}
+	}
+}
+
+@import 'header';
+@import 'button';
+@import 'content';
+@import 'post';
+@import 'feed-back';
+@import 'footer';
