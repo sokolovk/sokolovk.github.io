@@ -68,8 +68,8 @@
 		border-radius: 5px; 
 		border: 1px solid $color-grey;
 		resize: none;
-		padding: 0 5%;
-		height: 135px;
+		padding: 10px 5%;
+		height: 115px;
 		width: 90%;
 	}
 
@@ -94,8 +94,7 @@
 		}
 
 		&__input{
-			border-radius: 3px;
-			height: 25px;
+			border-radius: 3px;			
 			margin-top: 5px;
 		}
 

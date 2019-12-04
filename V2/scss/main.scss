@@ -16,7 +16,7 @@ body{
 	box-sizing: border-box;
 	font-family: muli;
 	font-size: $size-primary;
-	margin: 0;
+	margin: 0;	
 	overflow-x: hidden;
 
 	@media(max-width: 1024px){
@@ -25,6 +25,7 @@ body{
 
 	@media(max-width: 768px){
 		font-size: $size-sm;
+		overflow-x: hidden;
 	}
 }
 
@@ -43,7 +44,7 @@ body{
   	}
   }
 
-  @media(max-width: 1024px){
+  @media(max-width: 768px){
   	&{
   		padding: 0 5%;
   	}

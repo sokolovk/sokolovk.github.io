@@ -247,7 +247,7 @@ body{
 }
 .about-me__container,.contact-container,.portfolio-container{
 	margin:0 auto;
-	padding:35px 0;
+	padding:60px 0;
 	max-width:1366px;
 	overflow:hidden;
 }
